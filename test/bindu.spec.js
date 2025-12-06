@@ -7,7 +7,7 @@ test('bindu: places', (t) => {
     });
     
     const expected = [{
-        message: 'vṛddhirādaic: ie -> e',
+        message: 'vṛddhirādaic: ie -> ye',
         position: {
             column: 0,
             line: 1,

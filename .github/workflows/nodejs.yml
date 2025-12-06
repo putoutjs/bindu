@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NAME: redput
+      NAME: bindu
     strategy:
       matrix:
         node-version:

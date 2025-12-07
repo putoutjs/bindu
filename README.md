@@ -25,12 +25,14 @@ npm i bindu -g
 
 ```js
 import {bindu} from 'bindu';
-const {code} = bindu('प्रतिएक');
-// 'प्रत्येक';
 
+const {code} = bindu('प्रतिएक');
+
+// 'प्रत्येक';
 const {places} = bindu('प्रतिएक', {
-    fix: false
+    fix: false,
 });
+
 places[0].message;
 // vṛddhirādaic: ie -> ye
 ```

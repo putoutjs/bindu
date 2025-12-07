@@ -26,4 +26,3 @@ test('bindu: result', (t) => {
     t.equal(code, expected);
     t.end();
 });
-

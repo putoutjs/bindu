@@ -13,12 +13,26 @@
 
 > Bindu (Sanskrit: बिंदु) is a Sanskrit word meaning "point", "drop" or "dot".
 
-Pāṇini Aṣṭādhyāyī set of sanscrit grammar rules.
+[Pāṇini](https://en.wikipedia.org/wiki/P%C4%81%E1%B9%87ini) [Aṣṭādhyāyī](https://en.wikipedia.org/wiki/A%E1%B9%A3%E1%B9%AD%C4%81dhy%C4%81y%C4%AB) set of sanscrit grammar rules.
 
 ## Install
 
 ```
 npm i bindu -g
+```
+
+## Usage Example
+
+```js
+import {bindu} from 'bindu';
+const {code} = bindu('प्रतिएक');
+// 'प्रत्येक';
+
+const {places} = bindu('प्रतिएक', {
+    fix: false
+});
+places[0].message;
+// vṛddhirādaic: ie -> ye
 ```
 
 ## Rules

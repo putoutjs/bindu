@@ -13,7 +13,7 @@
 
 > Bindu (Sanskrit: बिंदु) is a Sanskrit word meaning "point", "drop" or "dot".
 
-Pāṇini Aṣṭādhyāyī set of sanscrit grammer rules.
+Pāṇini Aṣṭādhyāyī set of sanscrit grammar rules.
 
 ## Install
 

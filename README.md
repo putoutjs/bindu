@@ -39,7 +39,8 @@ places[0].message;
 
 ## Rules
 
-- ✅ [`apply-vriddhi`](https://putout.cloudcmd.io/#/gist/59a1854deb359883a3a6e1eb60e82e21/23f7ee70713f9b32cce13774a9bef454bc0f2ce0`);
+- ✅[`sandhi/apply-dirgha`](https://putout.cloudcmd.io/#/gist/0ad8154614be489ae50931109618100a/5ce86f7344b37fd40afeb229e6cb1f668d4f92fd);
+- ✅[`sandhi/apply-yan`](https://putout.cloudcmd.io/#/gist/3091528d3d3eb095032fbec200599df0/c4dcefa2d29fd85f9d3d768b6eaf6934fd5a3fbb);
 
 ## License
 

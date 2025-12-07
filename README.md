@@ -9,6 +9,7 @@
 [CoverageURL]: https://coveralls.io/github/putoutjs/bindu?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master&service=github
 
+> Bindu (Sanskrit: बिंदु) is a Sanskrit word meaning "point", "drop" or "dot".
 
 ## Install
 

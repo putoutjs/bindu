@@ -26,9 +26,9 @@ npm i bindu -g
 ```js
 import {bindu} from 'bindu';
 
-const {code} = bindu('प्रतिएक');
+bindu('प्रतिएक');
+// returns {code: 'प्रत्येक';A'}
 
-// 'प्रत्येक';
 const {places} = bindu('प्रतिएक', {
     fix: false,
 });

@@ -18,3 +18,12 @@ test('bindu: places', (t) => {
     t.deepEqual(places, expected);
     t.end();
 });
+
+test('bindu: result', (t) => {
+    const {code} = bindu('प्रतिएक');
+    const expected = 'प्रत्येक';
+    
+    t.equal(code, expected);
+    t.end();
+});
+

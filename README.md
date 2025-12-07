@@ -1,56 +1,24 @@
-# RedPut [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Bindu [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
-[NPMURL]: https://npmjs.org/package/redput "npm"
-[NPMIMGURL]: https://img.shields.io/npm/v/redput.svg?style=flat
-[BuildStatusURL]: https://github.com/putoutjs/redput/actions/workflows/nodejs.yml "Build Status"
-[BuildStatusIMGURL]: https://github.com/putoutjs/redput/actions/workflows/nodejs.yml/badge.svg
+[NPMURL]: https://npmjs.org/package/bindu "npm"
+[NPMIMGURL]: https://img.shields.io/npm/v/bindu.svg?style=flat
+[BuildStatusURL]: https://github.com/putoutjs/bindu/actions/workflows/nodejs.yml "Build Status"
+[BuildStatusIMGURL]: https://github.com/putoutjs/bindu/actions/workflows/nodejs.yml/badge.svg
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
-[CoverageURL]: https://coveralls.io/github/putoutjs/redput?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/redput/badge.svg?branch=master&service=github
+[CoverageURL]: https://coveralls.io/github/putoutjs/bindu?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master&service=github
 
-CLI tool to download source of a `rule` and `fixtures` from 🐊[**Putout Editor**](https://putout.cloudcmd.io/#/gist/33a75dce299788583a567e02f29828c8/7a97049f1c88ef9e3396d43b6a64246da0093670) and generate tests from it.
 
 ## Install
 
 ```
-npm i redput -g
+npm i bindu -g
 ```
 
-# Usage
+## Rules
 
-```sh
-GITHUB_TOKEN=github-token redput [putout-editor-url]
-```
-
-`redput` determines where it located and does one of next things:
-
-- if it finds `index.js` - creates rule inside nested plugin;
-- creates directory with a plugin name and fills directories `lib`, `test` and `fixture`;
-
-example of input:
-
-```js
-// ["off", "write-all-files"]
-export const report = () => `Write all files`;
-
-export const fix = (file) => {
-    const content = readFileContent(file);
-    writeFileContent(file, content);
-};
-
-export const scan = (root, {push}) => {
-    findFile(root, ['*']).map(push);
-};
-```
-
-When you get your rule downloaded, use:
-
-```sh
-UPDATE=1 npm fix:lint test
-```
-
-to finish preparations of new rule and tests.
+- ✅ [`apply-vriddhi`](https://putout.cloudcmd.io/#/gist/59a1854deb359883a3a6e1eb60e82e21/23f7ee70713f9b32cce13774a9bef454bc0f2ce0`);
 
 ## License
 

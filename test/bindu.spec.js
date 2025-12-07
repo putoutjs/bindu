@@ -8,7 +8,7 @@ test('bindu: places', (t) => {
     });
     
     const expected = [{
-        message: 'acvaṅgā ya va ra la',
+        message: 'iko yaṇaci',
         position: {
             column: 0,
             line: 1,

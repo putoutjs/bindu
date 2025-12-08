@@ -39,6 +39,17 @@ test('bindu: sandhi: guna', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: vriddhi', (t) => {
+    const {code} = bindu('राम एष', {
+        type: 'slp1',
+    });
+    
+    const expected = 'rAmaiza';
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: couple lines', (t) => {
     const {code} = bindu(montag`
         प्रति एक |

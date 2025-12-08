@@ -32,6 +32,7 @@ test('bindu: sandhi: guna', (t) => {
     const {code} = bindu('राम इव', {
         type: 'slp1',
     });
+    
     const expected = 'rAmeva';
     
     t.equal(code, expected);

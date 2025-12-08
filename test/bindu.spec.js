@@ -28,6 +28,16 @@ test('bindu: result', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: guna', (t) => {
+    const {code} = bindu('राम इव', {
+        type: 'slp1',
+    });
+    const expected = 'rAmeva';
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: couple lines', (t) => {
     const {code} = bindu(montag`
         प्रति एक |

@@ -50,6 +50,17 @@ test('bindu: sandhi: vriddhi', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: purvarupa', (t) => {
+    const {code} = bindu('अन्ते अपि', {
+        type: 'slp1',
+    });
+    
+    const expected = `ante'pi`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: couple lines', (t) => {
     const {code} = bindu(montag`
         प्रति एक |

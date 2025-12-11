@@ -61,6 +61,27 @@ test('bindu: sandhi: purvarupa', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: input: spl1', (t) => {
+    const {code} = bindu('ante api', {
+        type: 'slp1',
+    });
+    
+    const expected = `ante'pi`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
+test('bindu: sandhi: no report', (t) => {
+    const {places} = bindu(`ante'api`, {
+        fix: false,
+        type: 'slp1',
+    });
+    
+    t.notOk(places.length);
+    t.end();
+});
+
 test('bindu: couple lines', (t) => {
     const {code} = bindu(montag`
         प्रति एक |

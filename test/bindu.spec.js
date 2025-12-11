@@ -50,6 +50,17 @@ test('bindu: sandhi: vriddhi', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: ayadaya', (t) => {
+    const {code} = bindu('deva o', {
+        type: 'slp1',
+    });
+    
+    const expected = `devau`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: sandhi: purvarupa', (t) => {
     const {code} = bindu('अन्ते अपि', {
         type: 'slp1',

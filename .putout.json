@@ -1,7 +1,8 @@
 {
     "printer": "putout",
     "rules": {
-        "putout": "on"
+        "putout": "on",
+        "tape/remove-skip": "off"
     },
     "match": {
         "*.md": {

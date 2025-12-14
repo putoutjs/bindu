@@ -20,6 +20,16 @@ test('bindu: places', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: yan', (t) => {
+    const {code} = bindu('द्रौपदी अश्वम्', {
+        type: 'iast',
+    });
+    const expected = 'draupadyaśvam';
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: result', (t) => {
     const {code} = bindu('प्रति एक');
     const expected = 'प्रत्येक';

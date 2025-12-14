@@ -50,12 +50,12 @@ test('bindu: sandhi: guna', (t) => {
     t.end();
 });
 
-test.skip('bindu: sandhi: vriddhi', (t) => {
+test('bindu: sandhi: vriddhi', (t) => {
     const {code} = bindu('राम एष', {
-        type: 'slp1',
+        type: 'iast',
     });
     
-    const expected = 'rAmaiza';
+    const expected = 'rāmaiṣa';
     
     t.equal(code, expected);
     t.end();

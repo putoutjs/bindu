@@ -24,6 +24,7 @@ test('bindu: sandhi: yan', (t) => {
     const {code} = bindu('द्रौपदी अश्वम्', {
         type: 'iast',
     });
+    
     const expected = 'draupadyaśvam';
     
     t.equal(code, expected);

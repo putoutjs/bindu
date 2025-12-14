@@ -28,12 +28,11 @@ import {bindu} from 'bindu';
 
 bindu('प्रतिएक');
 // returns {code: 'प्रत्येक'}
-
 bindu('द्रौपदी अश्वम्', {
     type: 'iast',
 });
-// returns {code: 'draupadyaśvam'}
 
+// returns {code: 'draupadyaśvam'}
 const {places} = bindu('प्रतिएक', {
     fix: false,
 });

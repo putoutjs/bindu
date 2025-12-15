@@ -61,23 +61,23 @@ test('bindu: sandhi: vriddhi', (t) => {
     t.end();
 });
 
-test.skip('bindu: sandhi: ayadaya', (t) => {
-    const {code} = bindu('no ulluka', {
-        type: 'slp1',
+test('bindu: sandhi: ayadaya', (t) => {
+    const {code} = bindu('na ulluka', {
+        type: 'iast',
     });
     
-    const expected = `devau`;
+    const expected = `nolluka`;
     
     t.equal(code, expected);
     t.end();
 });
 
-test.skip('bindu: sandhi: ayadaya: not pararupa', (t) => {
-    const {code} = bindu('rama etad', {
+test('bindu: sandhi: ayadaya: not pararupa', (t) => {
+    const {code} = bindu('rAma etad', {
         type: 'slp1',
     });
     
-    const expected = `ramayetad`;
+    const expected = `rAmaitad`;
     
     t.equal(code, expected);
     t.end();
@@ -94,7 +94,7 @@ test('bindu: sandhi: pararupa: no dirgha', (t) => {
     t.end();
 });
 
-test.skip('bindu: sandhi: purvarupa', (t) => {
+test('bindu: sandhi: purvarupa', (t) => {
     const {code} = bindu('अन्ते अपि', {
         type: 'slp1',
     });
@@ -105,7 +105,7 @@ test.skip('bindu: sandhi: purvarupa', (t) => {
     t.end();
 });
 
-test.skip('bindu: sandhi: input: spl1', (t) => {
+test('bindu: sandhi: input: spl1', (t) => {
     const {code} = bindu('ante api', {
         type: 'slp1',
     });

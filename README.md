@@ -51,6 +51,23 @@ places[0].message;
 - ✅[`sandhi/apply-vriddhi`](https://putout.cloudcmd.io/#/gist/7cdc2383c74d7afeb8cfd93df7b5f868/79b1c979be725fc082cf81991b16fac527cfcd7b): [वृद्धिरेचि](https://www.learnsanskrit.org/panini/vowel/#:~:text=and%20%C4%81.-,6.1.88,-%E0%A4%B5%E0%A5%83%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%BF%E0%A4%B0%E0%A5%87%E0%A4%9A%E0%A4%BF);
 - ✅[`sandhi/apply-purvarupa`](https://putout.cloudcmd.io/#/gist/23e2b612a185529ea6823e5f81d35b7d/2ace30ac469be03af1c41911b78d85e85b9a1120): [एकः पूर्वपरयोः](https://www.learnsanskrit.org/panini/vowel/#:~:text=this%20rule%20mean%3F-,%E0%A4%8F%E0%A4%95%E0%A4%83%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%AA%E0%A4%B0%E0%A4%AF%E0%A5%8B%E0%A4%83,-eka%E1%B8%A5%20p%C5%ABrvaparayo%E1%B8%A5)
 - ✅[`sandhi/apply-ayadaya`](https://putout.cloudcmd.io/#/gist/39db56c40174f61caed795c2a2dc89a7/dc956c6b0834167d9814ba70036674f4a10f56f9): [आयादयः](https://www.learnsanskrit.org/references/sandhi/vowel/#:~:text=madhu%20iva%20%E2%86%92%20madhviva-,Now,-%2C%20some%20examples%20for)
+- ✅[`sandhi/apply-padantad`](https://putout.cloudcmd.io/#/gist/f73f49bf102a6f2ab34a100ee29f81cc/6b1c3f1595841a08a035437924165e4b8d27896d): [एङः पदान्तादति](https://www.gingersunrise.com/i/133147357/एङ-पदनतदत);
+
+#### apply-padantad
+
+```
+ए + अ → एऽ
+e + a → e'
+
+ओ + अ → ओऽ
+o + a → o'
+
+ऐ + अ → ऐऽ
+ai + a → ai'
+
+औ + अ → औऽ
+au + a → au'
+```
 
 #### apply-ayadaya
 

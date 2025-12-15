@@ -94,12 +94,12 @@ test('bindu: sandhi: pararupa: no dirgha', (t) => {
     t.end();
 });
 
-test('bindu: sandhi: purvarupa', (t) => {
+test('bindu: sandhi: ayadaya: slp1', (t) => {
     const {code} = bindu('अन्ते अपि', {
         type: 'slp1',
     });
     
-    const expected = `ante'pi`;
+    const expected = `antaye'pi`;
     
     t.equal(code, expected);
     t.end();
@@ -110,7 +110,7 @@ test('bindu: sandhi: input: spl1', (t) => {
         type: 'slp1',
     });
     
-    const expected = `ante'pi`;
+    const expected = `antaye'pi`;
     
     t.equal(code, expected);
     t.end();

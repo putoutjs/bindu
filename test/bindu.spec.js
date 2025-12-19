@@ -105,6 +105,17 @@ test('bindu: sandhi: ayadaya: slp1', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: rori', (t) => {
+    const {code} = bindu('punaH api', {
+        type: 'slp1',
+    });
+    
+    const expected = `punarapi`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: sandhi: input: spl1', (t) => {
     const {code} = bindu('ante api', {
         type: 'slp1',

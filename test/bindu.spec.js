@@ -13,7 +13,7 @@ test('bindu: places', (t) => {
             column: 0,
             line: 1,
         },
-        rule: 'sandhi/apply-yan',
+        rule: 'sandhi/ac/apply-yan',
     }];
     
     t.deepEqual(places, expected);
@@ -111,6 +111,17 @@ test('bindu: sandhi: rori', (t) => {
     });
     
     const expected = `punarapi`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
+test('bindu: sandhi: bhobhago', (t) => {
+    const {code} = bindu('namaH asti', {
+        type: 'slp1',
+    });
+    
+    const expected = `namo'asti`;
     
     t.equal(code, expected);
     t.end();

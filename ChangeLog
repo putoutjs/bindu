@@ -1,3 +1,8 @@
+2025.12.22, v1.11.1
+
+fix:
+- 0741e90 npmignore: dictionary: rm gz
+
 2025.12.22, v1.11.0
 
 feature:

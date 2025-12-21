@@ -6,5 +6,6 @@ fixture
 coverage
 yarn-error.log
 images
+dictionary/*.gz
 
 *.config.*

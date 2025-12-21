@@ -9,19 +9,16 @@
   "type": "module",
   "scripts": {
     "lint": "madrun lint",
-    "fresh:lint": "madrun fresh:lint",
-    "lint:fresh": "madrun lint:fresh",
     "fix:lint": "madrun fix:lint",
     "test": "madrun test",
-    "test:mock": "madrun test:mock",
     "watch:test": "madrun watch:test",
     "watch:tape": "madrun watch:tape",
     "watch:lint": "madrun watch:lint",
     "watcher": "madrun watcher",
     "coverage": "madrun coverage",
-    "coverage:es": "madrun coverage:es",
     "report": "madrun report",
-    "wisdom": "madrun wisdom"
+    "wisdom": "madrun wisdom",
+    "extract": "madrun extract"
   },
   "repository": {
     "type": "git",
@@ -55,11 +52,14 @@
     "c8": "^10.1.2",
     "eslint": "^9.0.0",
     "eslint-plugin-putout": "^29.0.2",
+    "fast-xml-parser": "^5.3.3",
+    "ipull": "^4.0.3",
     "madrun": "^11.0.0",
     "montag": "^1.2.1",
     "nodemon": "^3.0.1",
     "redlint": "^4.0.0",
-    "supertape": "^11.1.0"
+    "supertape": "^11.1.0",
+    "try-to-catch": "^3.0.1"
   },
   "publishConfig": {
     "access": "public"

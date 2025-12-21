@@ -7,5 +7,6 @@ package-lock.json
 npm-debug.log
 .nyc_output
 coverage
+dictionary/stems.json
 
 yarn-error.log

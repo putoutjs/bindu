@@ -127,6 +127,17 @@ test('bindu: sandhi: kharovasana', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: ac: ec-yava-yava', (t) => {
+    const {code} = bindu('nai iti', {
+        type: 'slp1',
+    });
+    
+    const expected = `nayiti`;
+    
+    t.equal(code, expected);
+    t.end();
+});
+
 test('bindu: sandhi: bhobhago', (t) => {
     const {code} = bindu('namaH asti', {
         type: 'slp1',

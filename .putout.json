@@ -9,5 +9,5 @@
             "putout/declare": "off"
         }
     },
-    "ignore": ["templates"]
+    "ignore": ["templates", "dictionary"]
 }

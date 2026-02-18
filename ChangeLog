@@ -1,3 +1,15 @@
+2026.02.18, v1.12.0
+
+feature:
+- a323bd3 bindu: try-to-catch v4.0.5
+- 4afe95d bindu: supertape v12.5.0
+- b283d39 bindu: redlint v6.0.0
+- 7dcd52f bindu: putout v42.0.5
+- c9670b8 bindu: madrun v13.0.0
+- e7699e3 bindu: eslint-plugin-putout v31.0.0
+- 6645cf3 bindu: eslint v10.0.0
+- 5d681b8 bindu: @putout/test v15.1.1
+
 2025.12.22, v1.11.1
 
 fix:

@@ -85,6 +85,14 @@ au + a → au'
 bhoati → bhavati
 ```
 
+#### apply-guna
+
+```
+भूत्वा + इह → भूत्वेह
+bhUtvA + iha → bhUtveha
+bhūtvā + iha → bhūtveha
+```
+
 #### apply-ayadaya
 
 ##### ए

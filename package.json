@@ -39,9 +39,7 @@
     "node": ">=20"
   },
   "imports": {
-    "#avyaya": {
-      "default": "./lib/avyaya/index.js"
-    }
+    "#avyaya": "./lib/avyaya/index.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",

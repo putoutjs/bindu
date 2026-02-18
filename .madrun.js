@@ -1,7 +1,7 @@
 import {readFile, writeFile} from 'node:fs/promises';
 import {unzipSync} from 'node:zlib';
 import {run} from 'madrun';
-import tryToCatch from 'try-to-catch';
+import {tryToCatch} from 'try-to-catch';
 
 export default {
     'lint': () => 'putout .',

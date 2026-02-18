@@ -1,12 +1,13 @@
 *.swp
+*.log
+*.lock
+
 .*.swp
 .idea
-
-node_modules
-package-lock.json
-npm-debug.log
 .nyc_output
-coverage
+
+package-lock.json
 dictionary/stems.json
 
-yarn-error.log
+node_modules
+coverage

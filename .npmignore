@@ -1,11 +1,13 @@
-.*
 *.spec.*
+*.config.*
+*.log
+*.loc
+
+.*
+
+dictionary/*.gz
 
 test
 fixture
 coverage
-yarn-error.log
 images
-dictionary/*.gz
-
-*.config.*

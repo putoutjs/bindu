@@ -59,7 +59,7 @@
     "nodemon": "^3.0.1",
     "redlint": "^6.0.0",
     "supertape": "^12.5.0",
-    "try-to-catch": "^3.0.1"
+    "try-to-catch": "^4.0.5"
   },
   "publishConfig": {
     "access": "public"

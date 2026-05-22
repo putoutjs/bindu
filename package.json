@@ -52,7 +52,7 @@
     "fast-xml-parser": "^5.3.3",
     "ipull": "^4.0.3",
     "madrun": "^13.0.0",
-    "montag": "^1.2.1",
+    "montag": "^2.0.1",
     "nodemon": "^3.0.1",
     "redlint": "^6.0.0",
     "superc8": "^12.7.0",

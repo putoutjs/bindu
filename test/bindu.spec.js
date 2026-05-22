@@ -1,5 +1,5 @@
 import {test} from 'supertape';
-import montag from 'montag';
+import {montag} from 'montag';
 import {bindu, toSLP1} from '../lib/bindu.js';
 
 test('bindu: places', (t) => {
@@ -177,6 +177,7 @@ test('bindu: couple lines', (t) => {
     `);
     
     const result = toSLP1(code);
+    
     const expected = montag`
         pratyeka |
         krAtmanaH ||

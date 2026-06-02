@@ -10,7 +10,7 @@ test('bindu: places', (t) => {
     const expected = [{
         message: 'iko yaṇaci',
         position: {
-            column: 1,
+            column: 0,
             line: 1,
         },
         rule: 'sandhi/ac/apply-yan',

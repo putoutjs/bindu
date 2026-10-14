@@ -1,7 +1,12 @@
 import {readFile, writeFile} from 'node:fs/promises';
 import {unzipSync} from 'node:zlib';
+import {join, dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {run} from 'madrun';
 import {tryToCatch} from 'try-to-catch';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default {
     'lint': () => 'putout .',
@@ -16,13 +21,13 @@ export default {
     'report': () => 'c8 report --reporter=lcov',
     'wisdom': () => run(['lint', 'coverage']),
     'extract': async () => {
-        const [error] = await tryToCatch(readFile, './dictionary/stems.json');
+        const [error] = await tryToCatch(readFile, new URL('./dictionary/stems.json', import.meta.url).pathname);
         
         if (!error)
-            return 'tape';
+            return 'echo';
         
-        const packed = await readFile('./dictionary/stems.json.gz');
-        await writeFile('./dictionary/stems.json', unzipSync(packed));
+        const packed = await readFile(new URL('./dictionary/stems.json.gz', import.meta.url).pathname);
+        await writeFile(join(__dirname, './dictionary/stems.json', unzipSync(packed)));
         
         return 'echo "✅ extract"';
     },

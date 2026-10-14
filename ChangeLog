@@ -1,3 +1,12 @@
+2026.10.15, v2.0.0
+
+feature:
+- 07413ca bindu: drop support of node < 22
+- a6c4ab2 apply-guna: ri
+- ef0e84a bindu: supertape v13.2.0
+- ddcf818 bindu: montag v2.0.1
+- 9fa29c3 bindu: superc8 v12.7.0
+
 2026.02.18, v1.12.0
 
 feature:

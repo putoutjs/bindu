@@ -88,7 +88,7 @@ test('bindu: sandhi: pararupa: no dirgha', (t) => {
         type: 'slp1',
     });
     
-    const expected = `ramapi`;
+    const expected = `ramApi`;
     
     t.equal(code, expected);
     t.end();

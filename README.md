@@ -91,6 +91,10 @@ bhoati → bhavati
 भूत्वा + इह → भूत्वेह
 bhUtvA + iha → bhUtveha
 bhūtvā + iha → bhūtveha
+
+देव + ऋषि → देवर्षि
+deva + fzi → devarzi
+deva + ṛṣi → devarṣi
 ```
 
 #### apply-ayadaya

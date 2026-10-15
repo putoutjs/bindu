@@ -1,6 +1,6 @@
 {
   "name": "bindu",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Pāṇini Aṣṭādhyāyī",
   "main": "lib/bindu.js",
   "bin": {

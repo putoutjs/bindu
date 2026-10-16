@@ -1,3 +1,13 @@
+2026.10.16, v2.0.4
+
+fix:
+- d19c008 sandhi: normalise test prefixes to bindu: sandhi: <plugin>:
+- 4ec54ef sandhi: add isSequenceExpression guard to prevent double-remove crash
+
+feature:
+- 5ba9ed0 apply-vriddhi: add a+ai a+au support, import VRIDDHI from pratyahara
+- f76ffe2 apply-guna: add ḷ and ā prior-vowel support via pratyahara
+
 2026.10.15, v2.0.3
 
 feature:

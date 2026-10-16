@@ -40,7 +40,7 @@
   },
   "imports": {
     "#avyaya": "./lib/avyaya/index.js",
-        "#pratyahara": "./lib/pratyahara.js"
+    "#pratyahara": "./lib/pratyahara.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",

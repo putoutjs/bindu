@@ -1,12 +1,7 @@
 import {readFile, writeFile} from 'node:fs/promises';
 import {unzipSync} from 'node:zlib';
-import {join, dirname} from 'node:path';
-import {fileURLToPath} from 'node:url';
 import {run} from 'madrun';
 import {tryToCatch} from 'try-to-catch';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 export default {
     'lint': () => 'putout .',
@@ -27,7 +22,7 @@ export default {
             return 'echo';
         
         const packed = await readFile(new URL('./dictionary/stems.json.gz', import.meta.url).pathname);
-        await writeFile(join(__dirname, './dictionary/stems.json'), unzipSync(packed));
+        await writeFile(new URL('./dictionary/stems.json', import.meta.url).pathname, unzipSync(packed));
         
         return 'echo "✅ extract"';
     },

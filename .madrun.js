@@ -6,6 +6,7 @@ import {tryToCatch} from 'try-to-catch';
 export default {
     'lint': () => 'putout .',
     'fix:lint': () => run('lint', '--fix'),
+    'pretest': () => run('extract'),
     'test': () => `tape 'test/**/*.js' '{lib,bin}/**/*.spec.{js,mjs}'`,
     'watch:test': async () => await run('watcher', `"${await run('test')}"`),
     'watch:tape': () => 'nodemon -w test -w lib --exec tape',

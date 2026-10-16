@@ -27,7 +27,7 @@ export default {
             return 'echo';
         
         const packed = await readFile(new URL('./dictionary/stems.json.gz', import.meta.url).pathname);
-        await writeFile(join(__dirname, './dictionary/stems.json', unzipSync(packed)));
+        await writeFile(join(__dirname, './dictionary/stems.json'), unzipSync(packed));
         
         return 'echo "✅ extract"';
     },

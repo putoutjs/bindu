@@ -186,3 +186,64 @@ test('bindu: couple lines', (t) => {
     t.equal(result, expected);
     t.end();
 });
+
+test('bindu: sandhi: hal: anusvara', (t) => {
+    const {code} = bindu('सम् गच्छति', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'saṅgacchati');
+    t.end();
+});
+
+test('bindu: sandhi: hal: anusvara: yoga', (t) => {
+    const {code} = bindu('सम् योग', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'sañyoga');
+    t.end();
+});
+
+test('bindu: sandhi: hal: jashtva: vak', (t) => {
+    const {code} = bindu('वाक् देव', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'vāgdeva');
+    t.end();
+});
+
+test('bindu: sandhi: hal: jashtva: tat', (t) => {
+    const {code} = bindu('तत् अपि', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'tadapi');
+    t.end();
+});
+
+test('bindu: sandhi: hal: places', (t) => {
+    const {places} = bindu('वाक् देव', {
+        fix: false,
+    });
+    
+    t.deepEqual(places[0], {
+        message: `jhalāṃ jaśo'nte`,
+        position: {
+            column: 0,
+            line: 1,
+        },
+        rule: 'sandhi/hal/apply-jashtva',
+    });
+    t.end();
+});
+
+test('bindu: sandhi: hal: chain: jashtva + yan', (t) => {
+    const {code} = bindu('वाक् एव', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'vāgeva');
+    t.end();
+});

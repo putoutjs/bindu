@@ -63,6 +63,35 @@ places[0].message;
 - ✅[`visarga/apply-bhobhago`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [भोभगोअघोअपूर्वस्य योऽशि](https://ashtadhyayi.com/sutraani/8/3/17);
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15);
 
+#### hal
+
+- ✅[`hal/apply-anusvara`](...): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/3/23);
+- ✅[`hal/apply-jashtva`](...): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/4/53);
+
+#### apply-anusvara
+
+```
+सम् + गच्छति → संगच्छति
+saM + gacCati → saNgacCati
+saṃ + gacchati → saṅgacchati
+
+सम् + योग → संयोग
+saM + yoga → saYyoga
+saṃ + yoga → sañyoga
+```
+
+#### apply-jashtva
+
+```
+वाक् + देव → वाग्देव
+vAk + deva → vAgdeva
+vāk + deva → vāgdeva
+
+तत् + अपि → तदपि
+tat + api → tadapi
+tata + api → tadapi
+```
+
 #### apply-padantad
 
 ```

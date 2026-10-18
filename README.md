@@ -62,11 +62,16 @@ places[0].message;
 - ✅[`visarga/apply-rori`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [रो रि।](https://www.learnsanskrit.org/vyakarana/sounds/hal-sandhi/#:~:text=rule%208.3.15%20below%3A-,%E0%A4%B0%E0%A5%8B%20%E0%A4%B0%E0%A4%BF%E0%A5%A4%20%E0%A5%AE.%E0%A5%A9.%E0%A5%A7%E0%A5%AA,-ro%20ri%20);
 - ✅[`visarga/apply-bhobhago`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [भोभगोअघोअपूर्वस्य योऽशि](https://ashtadhyayi.com/sutraani/8/3/17);
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15);
+- ✅[`visarga/apply-visarga-voiced`](...): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/8/3/15);
+- ✅[`visarga/apply-visarga-vowel`](...): [हशि च](https://ashtadhyayi.com/sutraani/8/3/15);
+- ✅[`visarga/apply-sassa`](...): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34);
 
 #### hal
 
 - ✅[`hal/apply-anusvara`](...): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/3/23);
 - ✅[`hal/apply-jashtva`](...): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/4/53);
+- ✅[`hal/apply-shchtva`](...): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/40);
+- ✅[`hal/apply-cch`](...): [छे च](https://ashtadhyayi.com/sutraani/6/1/73);
 
 #### apply-anusvara
 

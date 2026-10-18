@@ -252,7 +252,7 @@ test('bindu: sandhi: visarga: voiced', (t) => {
     const {code} = bindu('नरः गच्छति', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'naro gacchati');
     t.end();
 });
@@ -261,7 +261,7 @@ test('bindu: sandhi: visarga: vowel', (t) => {
     const {code} = bindu('नरः अपि', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'nararapi');
     t.end();
 });
@@ -270,7 +270,7 @@ test('bindu: sandhi: visarga: sassa: s', (t) => {
     const {code} = bindu('नमः स्मरः', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'namassmaraḥ');
     t.end();
 });
@@ -279,7 +279,7 @@ test('bindu: sandhi: visarga: sassa: S', (t) => {
     const {code} = bindu('नमः शिवः', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'namaśśivaḥ');
     t.end();
 });
@@ -288,7 +288,7 @@ test('bindu: sandhi: hal: shchtva', (t) => {
     const {code} = bindu('तत् च', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'tacca');
     t.end();
 });
@@ -297,7 +297,7 @@ test('bindu: sandhi: hal: cch', (t) => {
     const {code} = bindu('उप छन्द', {
         type: 'iast',
     });
-
+    
     t.equal(code, 'upacchanda');
     t.end();
 });

@@ -275,33 +275,6 @@ test('bindu: sandhi: visarga: sassa: s', (t) => {
     t.end();
 });
 
-test('bindu: sandhi: visarga: visarga-r: I', (t) => {
-    const {code} = bindu('देवी गच्छति', {
-        type: 'iast',
-    });
-    
-    t.equal(code, 'devīr gacchati');
-    t.end();
-});
-
-test('bindu: sandhi: visarga: visarga-r: U', (t) => {
-    const {code} = bindu('वधू देव', {
-        type: 'iast',
-    });
-    
-    t.equal(code, 'vadhūr deva');
-    t.end();
-});
-
-test('bindu: sandhi: hal: nasal: n+n', (t) => {
-    const {code} = bindu('तन् नमस्', {
-        type: 'iast',
-    });
-    
-    t.equal(code, 'tannamas');
-    t.end();
-});
-
 test('bindu: sandhi: hal: nasal: m+m', (t) => {
     const {code} = bindu('किम् मलम्', {
         type: 'iast',

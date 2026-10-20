@@ -301,3 +301,39 @@ test('bindu: sandhi: hal: cch', (t) => {
     t.equal(code, 'upacchanda');
     t.end();
 });
+
+test('bindu: sandhi: dirgha before avyaya is skipped', (t) => {
+    const {code} = bindu('rAma api', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAmApi');
+    t.end();
+});
+
+test('bindu: sandhi: dirgha before non-avyaya is applied', (t) => {
+    const {code} = bindu('rAma asti', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAmAsti');
+    t.end();
+});
+
+test('bindu: sandhi: dirgha before pronoun is applied', (t) => {
+    const {code} = bindu('rAma aham', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAmAham');
+    t.end();
+});
+
+test('bindu: sandhi: avyaya suffix blocks dirgha', (t) => {
+    const {code} = bindu('rAma kftvA', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAma kftvA');
+    t.end();
+});

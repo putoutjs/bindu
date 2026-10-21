@@ -397,7 +397,7 @@ test('bindu: sandhi: hal: natva', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'pitarNaH');
+    t.equal(code, 'pitarRaH');
     t.end();
 });
 
@@ -406,7 +406,7 @@ test('bindu: sandhi: hal: natva: after R', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'puRNaH');
+    t.equal(code, 'puRRaH');
     t.end();
 });
 

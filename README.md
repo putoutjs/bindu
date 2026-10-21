@@ -55,25 +55,27 @@ places[0].message;
 - ✅[`ac/apply-purvarupa`](https://putout.cloudcmd.io/#/gist/23e2b612a185529ea6823e5f81d35b7d/2ace30ac469be03af1c41911b78d85e85b9a1120): [एकः पूर्वपरयोः](https://www.learnsanskrit.org/panini/vowel/#:~:text=this%20rule%20mean%3F-,%E0%A4%8F%E0%A4%95%E0%A4%83%20%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%AA%E0%A4%B0%E0%A4%AF%E0%A5%8B%E0%A4%83,-eka%E1%B8%A5%20p%C5%ABrvaparayo%E1%B8%A5)
 - ✅[`ac/apply-ayadaya`](https://putout.cloudcmd.io/#/gist/39db56c40174f61caed795c2a2dc89a7/dc956c6b0834167d9814ba70036674f4a10f56f9): [आयादयः](https://www.learnsanskrit.org/references/sandhi/vowel/#:~:text=madhu%20iva%20%E2%86%92%20madhviva-,Now,-%2C%20some%20examples%20for)
 - ✅[`ac/apply-padantad`](https://putout.cloudcmd.io/#/gist/f73f49bf102a6f2ab34a100ee29f81cc/6b1c3f1595841a08a035437924165e4b8d27896d): [एङः पदान्तादति](https://www.gingersunrise.com/i/133147357/एङ-पदनतदत);
-- ✅[`ac/apply-ec-yava-yava`](https://putout.cloudcmd.io/#/gist/102fc8086d28f5d5431272c0402b80c2/44cf7b6cdeb9a0c240d6627710a824598cdd9696): [एचोऽयवायावः](https://ashtadhyayi.com/sutraani/6/1/78);
-- ✅[`ac/apply-pragrhya`](...): [आद्गुणः प्रगृह्य](https://ashtadhyayi.com/sutraani/1/1/11);
+- ✅[`ac/apply-eco-yavayava`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/ac/apply-eco-yavayava/index.js): [एचोऽयवायावः](https://ashtadhyayi.com/sutraani/6/1/78);
+- ✅[`ac/apply-pragrhya`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/ac/apply-pragrhya/index.js): [आद्गुणः प्रगृह्य](https://ashtadhyayi.com/sutraani/1/1/11);
 
 #### visarga
 
 - ✅[`visarga/apply-rori`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [रो रि।](https://www.learnsanskrit.org/vyakarana/sounds/hal-sandhi/#:~:text=rule%208.3.15%20below%3A-,%E0%A4%B0%E0%A5%8B%20%E0%A4%B0%E0%A4%BF%E0%A5%A4%20%E0%A5%AE.%E0%A5%A9.%E0%A5%A7%E0%A5%AA,-ro%20ri%20);
 - ✅[`visarga/apply-bhobhago`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [भोभगोअघोअपूर्वस्य योऽशि](https://ashtadhyayi.com/sutraani/8/3/17);
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15);
-- ✅[`visarga/apply-visarga-voiced`](...): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/8/3/15);
-- ✅[`visarga/apply-visarga-vowel`](...): [हशि च](https://ashtadhyayi.com/sutraani/8/3/15);
-- ✅[`visarga/apply-sassa`](...): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34);
+- ✅[`visarga/apply-visarga-voiced`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-voiced/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/8/3/15);
+- ✅[`visarga/apply-visarga-vowel`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-vowel/index.js): [हशि च](https://ashtadhyayi.com/sutraani/8/3/15);
+- ✅[`visarga/apply-sassa`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-sassa/index.js): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34);
 
 #### hal
 
-- ✅[`hal/apply-anusvara`](...): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/3/23);
-- ✅[`hal/apply-jashtva`](...): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/4/53);
-- ✅[`hal/apply-shchtva`](...): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/40);
-- ✅[`hal/apply-cch`](...): [छे च](https://ashtadhyayi.com/sutraani/6/1/73);
-- ✅[`hal/apply-topadhasha`](...): [तोपधायाः](https://ashtadhyayi.com/sutraani/8/4/60);
+- ✅[`hal/apply-anusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anusvara/index.js): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/3/23);
+- ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/4/53);
+- ✅[`hal/apply-shchtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchtva/index.js): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/40);
+- ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73);
+- ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोपधायाः](https://ashtadhyayi.com/sutraani/8/4/60);
+- ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [raṣābhyāṃ no ṇaḥ samānapade](https://ashtadhyayi.com/sutraani/8/4/2);
+- ✅[`hal/apply-charva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-charva/index.js): [khari ca](https://ashtadhyayi.com/sutraani/8/4/55);
 
 #### apply-anusvara
 
@@ -130,6 +132,35 @@ tat + labhate → tallabhate
 
 तद् + लभते → तल्लभते
 tad + labhate → tallabhate
+```
+
+#### apply-natva
+
+`n` becomes retroflex `ṇ` (SLP1 `R`) after `r`, `ṣ` or `ś` in the same pada.
+
+```
+पितर् + नः → पितर्णः
+pitar + naH → pitarRaH
+pitar + naḥ → pitarṇaḥ
+
+पुर् + नः → पुर्णः
+pur + naH → purRaH
+pur + naḥ → purṇaḥ
+```
+
+#### apply-charva
+
+A voiced final consonant becomes voiceless before a voiceless (khar) consonant.
+Opposite of apply-jashtva.
+
+```
+वाग् + च → वाक्च
+vAg + ca → vAkca
+vāg + ca → vākca
+
+वाग् + ते → वाक्ते
+vAg + te → vAkte
+vāg + te → vākte
 ```
 
 #### apply-pragrhya

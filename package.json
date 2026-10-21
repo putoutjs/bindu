@@ -40,6 +40,7 @@
   },
   "imports": {
     "#avyaya": "./lib/avyaya/index.js",
+    "#pragrhya": "./lib/pragrhya/index.js",
     "#pratyahara": "./lib/pratyahara.js",
     "#sandhi": "./lib/sandhi/create-sandhi.js",
     "#sandhi-test": "./test/create-sandhi-test.js"

@@ -337,3 +337,111 @@ test('bindu: sandhi: avyaya suffix blocks dirgha', (t) => {
     t.equal(code, 'rAma kftvA');
     t.end();
 });
+
+test('bindu: sandhi: hal: topadhasha', (t) => {
+    const {code} = bindu('tat labhate', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'tallabhate');
+    t.end();
+});
+
+test('bindu: sandhi: hal: topadhasha: d', (t) => {
+    const {code} = bindu('tad labhate', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'tallabhate');
+    t.end();
+});
+
+test('bindu: sandhi: hal: topadhasha: no dental last', (t) => {
+    const {code} = bindu('rAma labhate', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAma labhate');
+    t.end();
+});
+
+test('bindu: sandhi: ac: pragrhya: e', (t) => {
+    const {code} = bindu('kavI api', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'kavI api');
+    t.end();
+});
+
+test('bindu: sandhi: ac: pragrhya: o', (t) => {
+    const {code} = bindu('sADU api', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'sADU api');
+    t.end();
+});
+
+test('bindu: sandhi: ac: pragrhya: not pragrhya', (t) => {
+    const {code} = bindu('rAma api', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'rAmApi');
+    t.end();
+});
+
+test('bindu: sandhi: hal: natva', (t) => {
+    const {code} = bindu('pitar naH', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'pitarNaH');
+    t.end();
+});
+
+test('bindu: sandhi: hal: natva: after R', (t) => {
+    const {code} = bindu('puR naH', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'puRNaH');
+    t.end();
+});
+
+test('bindu: sandhi: hal: natva: no rsh', (t) => {
+    const {code} = bindu('gata naH', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'gata naH');
+    t.end();
+});
+
+test('bindu: sandhi: hal: charva', (t) => {
+    const {code} = bindu('vAg ca', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'vAkca');
+    t.end();
+});
+
+test('bindu: sandhi: hal: charva: g-k', (t) => {
+    const {code} = bindu('vAg te', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'vAkte');
+    t.end();
+});
+
+test('bindu: sandhi: hal: charva: no voiced last', (t) => {
+    const {code} = bindu('vAk deva', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'vAgdeva');
+    t.end();
+});

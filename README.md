@@ -56,6 +56,7 @@ places[0].message;
 - ✅[`ac/apply-ayadaya`](https://putout.cloudcmd.io/#/gist/39db56c40174f61caed795c2a2dc89a7/dc956c6b0834167d9814ba70036674f4a10f56f9): [आयादयः](https://www.learnsanskrit.org/references/sandhi/vowel/#:~:text=madhu%20iva%20%E2%86%92%20madhviva-,Now,-%2C%20some%20examples%20for)
 - ✅[`ac/apply-padantad`](https://putout.cloudcmd.io/#/gist/f73f49bf102a6f2ab34a100ee29f81cc/6b1c3f1595841a08a035437924165e4b8d27896d): [एङः पदान्तादति](https://www.gingersunrise.com/i/133147357/एङ-पदनतदत);
 - ✅[`ac/apply-ec-yava-yava`](https://putout.cloudcmd.io/#/gist/102fc8086d28f5d5431272c0402b80c2/44cf7b6cdeb9a0c240d6627710a824598cdd9696): [एचोऽयवायावः](https://ashtadhyayi.com/sutraani/6/1/78);
+- ✅[`ac/apply-pragrhya`](...): [आद्गुणः प्रगृह्य](https://ashtadhyayi.com/sutraani/1/1/11);
 
 #### visarga
 
@@ -72,6 +73,7 @@ places[0].message;
 - ✅[`hal/apply-jashtva`](...): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/4/53);
 - ✅[`hal/apply-shchtva`](...): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/40);
 - ✅[`hal/apply-cch`](...): [छे च](https://ashtadhyayi.com/sutraani/6/1/73);
+- ✅[`hal/apply-topadhasha`](...): [तोपधायाः](https://ashtadhyayi.com/sutraani/8/4/60);
 
 #### apply-anusvara
 
@@ -118,6 +120,28 @@ au + a → au'
 ```
 भोअति → भवति
 bhoati → bhavati
+```
+
+#### apply-topadhasha
+
+```
+तत् + लभते → तल्लभते
+tat + labhate → tallabhate
+
+तद् + लभते → तल्लभते
+tad + labhate → tallabhate
+```
+
+#### apply-pragrhya
+
+Pragrhya words are exempt from sandhi: their final vowel stays separate.
+
+```
+कवी + अपि → कवी अपि
+kavI + api → kavI api
+
+साधु + अपि → साधु अपि
+sADU + api → sADU api
 ```
 
 #### apply-guna

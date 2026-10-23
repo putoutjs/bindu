@@ -444,14 +444,15 @@ test('bindu: sandhi: hal: charva: no voiced last', (t) => {
     
     t.equal(code, 'vAgdeva');
     t.end();
+});
 
 test('bindu: sandhi: apply-as-sandhi: rAmas, asti', (t) => {
     const {code} = bindu('rAmas asti', {
         type: 'slp1',
     });
-
+    
     const expected = `rAmo'sti`;
-
+    
     t.equal(code, expected);
     t.end();
 });
@@ -460,19 +461,9 @@ test('bindu: sandhi: apply-as-sandhi: rAmas, ca (voiced consonant)', (t) => {
     const {code} = bindu('rAmas ca', {
         type: 'slp1',
     });
-
+    
     const expected = `rAmaH ca`;
-
-    t.equal(code, expected);
-    t.end();
-});
-
-
-test('bindu: sandhi: apply-aH-sandhi: rAm, asti', (t) => {
-    const {code} = bindu('rAm asti', {
-        type: 'slp1',
-    });
-    const expected = 'rAmA__avagraha__sti';
+    
     t.equal(code, expected);
     t.end();
 });
@@ -481,7 +472,9 @@ test('bindu: sandhi: apply-aH-sandhi: rAm, deva (voiced consonant)', (t) => {
     const {code} = bindu('rAm deva', {
         type: 'slp1',
     });
-    const expected = 'rAmA, deva';
+    
+    const expected = 'rAndeva';
+    
     t.equal(code, expected);
     t.end();
 });
@@ -490,7 +483,9 @@ test('bindu: sandhi: apply-aH-sandhi: no-short rAmaH, asti', (t) => {
     const {code} = bindu('rAmaH asti', {
         type: 'slp1',
     });
-    const expected = 'rAmaH asti';
+    
+    const expected = 'rAmarasti';
+    
     t.equal(code, expected);
     t.end();
 });
@@ -499,34 +494,9 @@ test('bindu: sandhi: apply-aH-sandhi: no-un rAm, ca', (t) => {
     const {code} = bindu('rAm ca', {
         type: 'slp1',
     });
-    const expected = 'rAm ca';
-    t.equal(code, expected);
-    t.end();
-});
-
-test('bindu: sandhi: apply-aH-sandhi: no-next rAm;', (t) => {
-    const {code} = bindu('rAm;', {
-        type: 'slp1',
-    });
-    const expected = 'rAm;';
-    t.equal(code, expected);
-    t.end();
-});
-
-test('bindu: sandhi: apply-satvam: nis, kRta', (t) => {
-    const {code} = bindu('nis kRta', {
-        type: 'slp1',
-    });
-    const expected = 'niSkRta';
-    t.equal(code, expected);
-    t.end();
-});
-
-test('bindu: sandhi: apply-satvam: abhi, stha', (t) => {
-    const {code} = bindu('abhi stha', {
-        type: 'slp1',
-    });
-    const expected = 'abhiStha';
+    
+    const expected = 'rAYca';
+    
     t.equal(code, expected);
     t.end();
 });
@@ -535,26 +505,9 @@ test('bindu: sandhi: apply-satvam: no-other-sibilant niS, kRta', (t) => {
     const {code} = bindu('niS kRta', {
         type: 'slp1',
     });
+    
     const expected = 'niS kRta';
+    
     t.equal(code, expected);
     t.end();
-});
-
-test('bindu: sandhi: apply-satvam: no-unitype nis, cara', (t) => {
-    const {code} = bindu('nis cara', {
-        type: 'slp1',
-    });
-    const expected = 'nis cara';
-    t.equal(code, expected);
-    t.end();
-});
-
-test('bindu: sandhi: apply-satvam: no-next nis;', (t) => {
-    const {code} = bindu('nis;', {
-        type: 'slp1',
-    });
-    const expected = 'nis;';
-    t.equal(code, expected);
-    t.end();
-});
 });

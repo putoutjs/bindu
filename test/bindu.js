@@ -471,7 +471,6 @@ test('bindu: sandhi: apply-as-sandhi: rAmas, ca (voiced consonant)', (t) => {
 test('bindu: sandhi: apply-aH-sandhi: rAm, asti', (t) => {
     const {code} = bindu('rAm asti', {
         type: 'slp1',
-        plugins: [['apply-aH-sandhi', require('../lib/sandhi/visarga/index.js').applyAHSandhi]],
     });
     const expected = 'rAmA__avagraha__sti';
     t.equal(code, expected);
@@ -481,7 +480,6 @@ test('bindu: sandhi: apply-aH-sandhi: rAm, asti', (t) => {
 test('bindu: sandhi: apply-aH-sandhi: rAm, deva (voiced consonant)', (t) => {
     const {code} = bindu('rAm deva', {
         type: 'slp1',
-        plugins: [['apply-aH-sandhi', require('../lib/sandhi/visarga/index.js').applyAHSandhi]],
     });
     const expected = 'rAmA, deva';
     t.equal(code, expected);
@@ -491,7 +489,6 @@ test('bindu: sandhi: apply-aH-sandhi: rAm, deva (voiced consonant)', (t) => {
 test('bindu: sandhi: apply-aH-sandhi: no-short rAmaH, asti', (t) => {
     const {code} = bindu('rAmaH asti', {
         type: 'slp1',
-        plugins: [['apply-aH-sandhi', require('../lib/sandhi/visarga/index.js').applyAHSandhi]],
     });
     const expected = 'rAmaH asti';
     t.equal(code, expected);
@@ -501,7 +498,6 @@ test('bindu: sandhi: apply-aH-sandhi: no-short rAmaH, asti', (t) => {
 test('bindu: sandhi: apply-aH-sandhi: no-un rAm, ca', (t) => {
     const {code} = bindu('rAm ca', {
         type: 'slp1',
-        plugins: [['apply-aH-sandhi', require('../lib/sandhi/visarga/index.js').applyAHSandhi]],
     });
     const expected = 'rAm ca';
     t.equal(code, expected);
@@ -511,7 +507,6 @@ test('bindu: sandhi: apply-aH-sandhi: no-un rAm, ca', (t) => {
 test('bindu: sandhi: apply-aH-sandhi: no-next rAm;', (t) => {
     const {code} = bindu('rAm;', {
         type: 'slp1',
-        plugins: [['apply-aH-sandhi', require('../lib/sandhi/visarga/index.js').applyAHSandhi]],
     });
     const expected = 'rAm;';
     t.equal(code, expected);
@@ -521,7 +516,6 @@ test('bindu: sandhi: apply-aH-sandhi: no-next rAm;', (t) => {
 test('bindu: sandhi: apply-satvam: nis, kRta', (t) => {
     const {code} = bindu('nis kRta', {
         type: 'slp1',
-        plugins: [['apply-satvam', require('../lib/sandhi/hal/index.js').applySatvam]],
     });
     const expected = 'niSkRta';
     t.equal(code, expected);
@@ -531,7 +525,6 @@ test('bindu: sandhi: apply-satvam: nis, kRta', (t) => {
 test('bindu: sandhi: apply-satvam: abhi, stha', (t) => {
     const {code} = bindu('abhi stha', {
         type: 'slp1',
-        plugins: [['apply-satvam', require('../lib/sandhi/hal/index.js').applySatvam]],
     });
     const expected = 'abhiStha';
     t.equal(code, expected);
@@ -541,7 +534,6 @@ test('bindu: sandhi: apply-satvam: abhi, stha', (t) => {
 test('bindu: sandhi: apply-satvam: no-other-sibilant niS, kRta', (t) => {
     const {code} = bindu('niS kRta', {
         type: 'slp1',
-        plugins: [['apply-satvam', require('../lib/sandhi/hal/index.js').applySatvam]],
     });
     const expected = 'niS kRta';
     t.equal(code, expected);
@@ -551,7 +543,6 @@ test('bindu: sandhi: apply-satvam: no-other-sibilant niS, kRta', (t) => {
 test('bindu: sandhi: apply-satvam: no-unitype nis, cara', (t) => {
     const {code} = bindu('nis cara', {
         type: 'slp1',
-        plugins: [['apply-satvam', require('../lib/sandhi/hal/index.js').applySatvam]],
     });
     const expected = 'nis cara';
     t.equal(code, expected);
@@ -561,7 +552,6 @@ test('bindu: sandhi: apply-satvam: no-unitype nis, cara', (t) => {
 test('bindu: sandhi: apply-satvam: no-next nis;', (t) => {
     const {code} = bindu('nis;', {
         type: 'slp1',
-        plugins: [['apply-satvam', require('../lib/sandhi/hal/index.js').applySatvam]],
     });
     const expected = 'nis;';
     t.equal(code, expected);

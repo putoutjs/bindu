@@ -1,3 +1,15 @@
+2026.10.24, v2.2.0
+
+feature:
+- 30f9e05 imports
+- 28fddbf applay-satvam: add
+- b8c6d53 apply-as-sandhi: add
+- 228d0fd bindu: runner: add
+- eadb8e9 apply-natva: add
+- 0c99219 bindu: apply-topadashya
+- 485ecfd sandhi: charva/natva
+- e786ce8 bindu: avyaya
+
 2026.10.19, v2.1.0
 
 fix:

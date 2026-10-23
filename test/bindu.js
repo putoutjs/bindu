@@ -444,4 +444,28 @@ test('bindu: sandhi: hal: charva: no voiced last', (t) => {
     
     t.equal(code, 'vAgdeva');
     t.end();
+
+test('bindu: sandhi: apply-as-sandhi: rAmas, asti', (t) => {
+    const {code} = bindu('rAmas asti', {
+        type: 'slp1',
+    });
+
+    const expected = `rAmo'sti`;
+
+    t.equal(code, expected);
+    t.end();
+});
+
+test('bindu: sandhi: apply-as-sandhi: rAmas, ca (voiced consonant)', (t) => {
+    const {code} = bindu('rAmas ca', {
+        type: 'slp1',
+    });
+
+    const expected = `rAmaH ca`;
+
+    t.equal(code, expected);
+    t.end();
+});
+
+
 });

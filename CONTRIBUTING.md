@@ -1,3 +1,7 @@
+## Names
+
+All file names are lower kebab-case
+
 ## Commit
 
 Format of the commit message: **type: scope: subject**

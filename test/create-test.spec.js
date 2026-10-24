@@ -1,9 +1,9 @@
 import {operator} from 'putout';
-import {createSandhiTest} from '#sandhi-test';
+import {createTest} from '#test';
 
 const {remove} = operator;
 
-const test = createSandhiTest(import.meta.url, {
+const test = createTest(import.meta.url, {
     plugins: [
         ['sandhi-test', {
             report: () => 'sandhi-test',

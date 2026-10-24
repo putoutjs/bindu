@@ -44,7 +44,7 @@
     "#symbols": "./lib/symbols.js",
     "#pratyahara": "./lib/pratyahara.js",
     "#sandhi": "./lib/sandhi/create-sandhi.js",
-    "#sandhi-test": "./test/create-sandhi-test.js"
+    "#test": "./test/create-test.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",

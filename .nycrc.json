@@ -8,7 +8,8 @@
         "**/fixture",
         "**/{bin,write,templates}",
         ".*",
-        "test"
+        "test",
+        "coverage"
     ],
     "branches": 100,
     "lines": 100,

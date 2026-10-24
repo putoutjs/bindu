@@ -124,6 +124,28 @@ au + a → au'
 bhoati → bhavati
 ```
 
+#### apply-as-sandhi
+
+```
+ramas + asti → ramo'sti
+rAmas + asti → rAmo'sti
+ramas + ca → rAmaH ca
+```
+
+#### apply-ah-sandhi
+
+```
+ramāḥ + asti → ramā'sti
+rAmAH + asti → rAmA'sti
+ramāḥ + deva → ramā deva
+rAmAH + deva → rAmA deva
+```
+
+#### apply-satvam
+
+```
+nis + kRta → niSkRta
+```
 #### apply-topadhasha
 
 ```

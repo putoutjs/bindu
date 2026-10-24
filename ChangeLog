@@ -1,3 +1,10 @@
+2026.10.24, v2.2.1
+
+feature:
+- d450702 createSandhi: simplify
+- df7591e pratyahara: add startsWithAiu, endsWithEc
+- b03b7e0 apply-purvarupa: apply astiShortVowel
+
 2026.10.24, v2.2.0
 
 feature:

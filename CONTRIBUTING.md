@@ -1,3 +1,7 @@
+## Tests
+
+TDD, Coverage 100%, remove all uncovered code.
+
 ## Names
 
 All file names are lower kebab-case

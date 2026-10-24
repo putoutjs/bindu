@@ -1,6 +1,10 @@
+## Comments
+
+Never write comments, write clear code instead.
+
 ## Tests
 
-TDD, Coverage 100%, remove all uncovered code.
+TDD, Coverage 100%, remove all uncovered code. Less code is better.
 
 ## Names
 

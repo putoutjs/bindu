@@ -43,7 +43,7 @@
     "#pragrhya": "./lib/pragrhya/index.js",
     "#symbols": "./lib/symbols.js",
     "#pratyahara": "./lib/pratyahara.js",
-    "#sandhi": "./lib/sandhi/create-sandhi.js",
+    "#sandhi": "./lib/creators/sandhi/sandhi.js",
     "#test": "./test/create-test.js"
   },
   "dependencies": {

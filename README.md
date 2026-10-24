@@ -146,6 +146,7 @@ rAmAH + deva → rAmA deva
 ```
 nis + kRta → niSkRta
 ```
+
 #### apply-topadhasha
 
 ```

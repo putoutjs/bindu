@@ -29,16 +29,16 @@ export const shraum = () => ({
 
 ### Words and fragments
 
-| expression    | meaning                                        |
-|---------------|------------------------------------------------|
-| `__a`         | left word                                      |
-| `__b`         | right word                                     |
-| `"x"`         | string literal                                 |
-| `__a|N`       | last N sounds of `__a`                         |
-| `__b|N`       | first N sounds of `__b`                        |
-| `__a / N`     | `__a` without its last N sounds                |
-| `__b / N`     | `__b` without its first N sounds               |
-| `(__a / 1)|1` | slices compose; the root word decides the side |
+| expression | meaning                          |
+|------------|----------------------------------|
+| `__a`      | left word                        |
+| `__b`      | right word                       |
+| `"x"`      | string literal                   |
+| `__a       | N`                               | last N sounds of `__a`                         |
+| `__b       | N`                               | first N sounds of `__b`                        |
+| `__a / N`  | `__a` without its last N sounds  |
+| `__b / N`  | `__b` without its first N sounds |
+| `(__a / 1) | 1`                               | slices compose; the root word decides the side |
 
 `N` is a numeric literal on the right. A shortage gives an empty string: `__a|2` on a one-sound word is `''`.
 
@@ -57,7 +57,7 @@ As the only call argument, or after a `/` chain, no parentheses are needed: `__i
 
 ### Built-ins
 
-Every built-in starts with `__`. Predicates and lookups take exactly one argument, constants take none.
+Every built-in starts with `__`. Predicates and lookups take one or more arguments, constants take none.
 
 Predicates, true or false, always false on an empty string:
 
@@ -68,7 +68,18 @@ Predicates, true or false, always false on an empty string:
 | `__hrasva` `__aA`                         | short vowels, `a` and `A`                 |
 | `__tavarga` `__cavarga` `__tad`           | dental stops, palatal stops, `t` and `d`  |
 | `__mum` `__saraphe` `__rasha` `__jhash`   | `m M`, `s r`, `r R S z`, voiced stops     |
+| `__savarna`                               | two sounds, equal ignoring case           |
 | `__pragrhya` `__avyaya` `__inflected`     | word predicates, argument is a whole word |
+
+A predicate gets its arguments in order and is false when any of them is an empty string. Several arguments read like the sūtra:
+
+```js
+export const shraum = () => ({
+    '__ak(__a|1) && __savarna(__a|1, __b|1)': '__a / 1 + __upper(__a|1) + __b / 1',
+});
+```
+
+A call needs at least one argument. Built-ins that take one value ignore the rest.
 
 Lookups, return a string, unknown sounds stay unchanged:
 
@@ -86,7 +97,9 @@ Constants, a string used like an identifier, with no call:
 | `__avagraha` | avagraha placeholder `__avagraha__`, the same one `preProcess` puts into words, for `o'` |
 
 ```js
-'(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
+export const shraum = () => ({
+    '(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
+});
 ```
 
 New built-ins go to `builtins.js` with a row in `builtins.spec.js`.

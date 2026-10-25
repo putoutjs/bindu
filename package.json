@@ -44,6 +44,7 @@
     "#symbols": "./lib/symbols.js",
     "#pratyahara": "./lib/pratyahara.js",
     "#sandhi": "./lib/creators/sandhi/sandhi.js",
+    "#shraum": "./lib/creators/shraum/shraum.js",
     "#test": "./test/create-test.js"
   },
   "dependencies": {
@@ -62,6 +63,7 @@
     "redlint": "^6.0.0",
     "superc8": "^12.7.0",
     "supertape": "^13.2.0",
+    "try-catch": "^4.1.1",
     "try-to-catch": "^4.0.5"
   },
   "publishConfig": {

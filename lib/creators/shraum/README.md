@@ -57,7 +57,7 @@ As the only call argument, or after a `/` chain, no parentheses are needed: `__i
 
 ### Built-ins
 
-Every built-in starts with `__` and takes exactly one argument.
+Every built-in starts with `__`. Predicates and lookups take exactly one argument, constants take none.
 
 Predicates, true or false, always false on an empty string:
 
@@ -79,23 +79,31 @@ Lookups, return a string, unknown sounds stay unchanged:
 | `__talavya` `__anunasika` | palatal, nasal of the class  |
 | `__upper` `__lower`       | `toUpperCase`, `toLowerCase` |
 
+Constants, a string used like an identifier, with no call:
+
+| name         | value                                                                                    |
+|--------------|------------------------------------------------------------------------------------------|
+| `__avagraha` | avagraha placeholder `__avagraha__`, the same one `preProcess` puts into words, for `o'` |
+
+```js
+'(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
+```
+
 New built-ins go to `builtins.js` with a row in `builtins.spec.js`.
 
 ### Several rules, composition
 
 ```js
-import {avagraha} from '#symbols';
-
 const guard = '!__inflected(__a) && __ac(__b|1)';
 
 export const shraum = () => ({
     [`${guard} && (__a|1) === "e" && (__b|1) !== "e"`]: '__a / 1 + "ay" + __b',
     [`${guard} && (__a|1) === "o"`]: '__a / 1 + "av" + __b',
-    '(__a|2) === "aH" && __ac(__b|1)': `__a / 2 + "o${avagraha.code}" + __b / 1`,
+    '(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
 });
 ```
 
-Rules are JavaScript, so constants and template literals are the way to share parts.
+Rules are JavaScript, so constants and template literals are the way to share parts. `__avagraha` is a built-in constant: no import of `#symbols` and no `${avagraha.code}` needed.
 
 ## Pitfall: a solo rule must not match its own output
 

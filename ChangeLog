@@ -1,3 +1,30 @@
+2026.10.25, v2.3.0
+
+feature:
+- 236d1c1 apply-eco-yavayava: use createShraum
+- 25a10ed apply-dirgha: use createShraum
+- 4ed0121 apply-yan: use createShraum
+- 6beba88 apply-vriddhi: use createShraum
+- 25fdc7f apply-padantad: use createShraum
+- f218c55 apply-bhobhago: use createShraum
+- 88d071e apply-as-sandhi: use createShraum
+- 1cb8d8f apply-visarga-vowel: use createShraum
+- 701df3a apply-visarga-voiced: use createShraum
+- 0df7611 apply-sassa: use createShraum
+- 70e1467 apply-shchtva: use createShraum
+- 045cbc0 apply-jashtva: use createShraum
+- 54d3882 apply-charva: use createShraum
+- 8cbc5b9 apply-anusvara: use createShraum
+- 39f9cea apply-guna: use createShraum
+- 7b96f23 apply-satvam: use createShraum
+- 2fd5684 apply-cch: use createShraum
+- b492ac3 apply-topadhasha: use createShraum
+- 5b52365 apply-natva: use createShraum
+- 39e92a3 apply-kharovasana: use createShraum
+- fb42623 apply-rori: use createShraum
+- cf5ee72 shraum: add
+- 108ea8f bindu: creators: sandhi
+
 2026.10.24, v2.2.1
 
 feature:

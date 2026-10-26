@@ -2,7 +2,7 @@
 
 Runner for sandhi rules written as plain code. For every word that has a next word in a sequence, it asks the rule whether it applies and lets the rule rewrite the pair.
 
-Prefer [`createShraum`](../shraum/README.md) when the rule is a condition and a replacement string. Use `createSandhi` when the rule needs real code: other AST nodes, dictionaries, several branches sharing a computation.
+Prefer [`createGlaum`](../glaum/README.md) when one result fits all matching cases, and [`createShraum`](../shraum/README.md) when each case has its own result. Use `createSandhi` when the rule needs real code: other AST nodes, dictionaries, several branches sharing a computation.
 
 ## What the runner sees
 
@@ -111,3 +111,20 @@ test('bindu: sandhi: apply-guna: no report: no-a-last', (t) => {
 ```
 
 Fixtures: `fixture/apply-guna.js` holds `deva, indra;`, `fixture/apply-guna-fix.js` is generated. Coverage must stay at 100%: add a fixture for every branch.
+
+## When the rule stays here
+
+`apply-purvarupa` removes the next word through `path.parentPath.node.expressions.pop()`, and `apply-ayadaya` branches on the next word per ending. These are not a condition plus a result, so they use `createSandhi` directly.
+
+## API
+
+```js
+createSandhi({
+    rule,
+    options,
+    plugin,
+    msg,
+});
+```
+
+Returns `{rule, plugin: {report, fix, traverse}, msg, options}` for putout. `createShraum` and `createGlaum` call it with the `when`, `then` and `fix` they build from the DSL.

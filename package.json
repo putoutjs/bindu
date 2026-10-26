@@ -43,8 +43,9 @@
     "#pragrhya": "./lib/pragrhya/index.js",
     "#symbols": "./lib/symbols.js",
     "#pratyahara": "./lib/pratyahara.js",
-    "#sandhi": "./lib/creators/sandhi/sandhi.js",
-    "#shraum": "./lib/creators/shraum/shraum.js",
+    "#sandhi": "./lib/runners/sandhi/sandhi.js",
+    "#shraum": "./lib/runners/shraum/shraum.js",
+    "#glaum": "./lib/runners/glaum/glaum.js",
     "#test": "./test/create-test.js"
   },
   "dependencies": {

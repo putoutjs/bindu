@@ -2,7 +2,7 @@
 
 DSL runner for sandhi rules. A rule is a pair of plain JavaScript expressions, parsed with `putout` and evaluated over the JS AST: no custom syntax, no custom parser.
 
-Use it when a rule only looks at the last sounds of the left word and the first sounds of the right word, and produces one new word. For anything structural use [`createSandhi`](../sandhi/README.md).
+Use it when a rule only looks at the last sounds of the left word and the first sounds of the right word, and produces one new word. When one result fits every case, use [`createGlaum`](../glaum/README.md). For anything structural use [`createSandhi`](../sandhi/README.md).
 
 ## Plugin shape
 
@@ -17,6 +17,7 @@ export const shraum = () => ({
 - `report` is the message of the rule (sūtra).
 - The plugin **must export `shraum`**: putout selects the runner by export name.
 - `shraum()` returns an object: `condition: replacement`.
+- The plugin can also export `nimitta`: guards shared by all cases, see below.
 - Entries are tried in order, the **first matching entry wins**.
 - Text is SLP1: `A` ā, `f` ṛ, `x` ḷ, `w` ṭ, `q` ḍ, `R` ṇ, `N` ṅ, `Y` ñ, `z` ṣ, `S` ś, `H` visarga, `M` anusvara.
 
@@ -104,19 +105,44 @@ export const shraum = () => ({
 
 New built-ins go to `builtins.js` with a row in `builtins.spec.js`.
 
-### Several rules, composition
+### Several rules
 
 ```js
-const guard = '!__inflected(__a) && __ac(__b|1)';
-
 export const shraum = () => ({
-    [`${guard} && (__a|1) === "e" && (__b|1) !== "e"`]: '__a / 1 + "ay" + __b',
-    [`${guard} && (__a|1) === "o"`]: '__a / 1 + "av" + __b',
-    '(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
+    '(__a|1) === "e" && (__b|1) !== "e"': '__a / 1 + "ay" + __b',
+    '(__a|1) === "o"': '__a / 1 + "av" + __b',
 });
 ```
 
 Rules are JavaScript, so constants and template literals are the way to share parts. `__avagraha` is a built-in constant: no import of `#symbols` and no `${avagraha.code}` needed.
+
+## Shared guards: nimitta
+
+When several cases repeat the same condition, move it to `nimitta`. *Nimitta* is the condition that lets a rule apply. It is a list of signed lines `[sign, condition]`:
+
+```js
+export const report = () => `vṛddhireci`;
+
+export const nimitta = () => [
+    ['-', '!__aA(__a|1)'],
+];
+
+export const shraum = () => ({
+    '(__b|1) === "e"': '__a + "i" + __b / 1',
+    '(__b|1) === "o"': '__a + "u" + __b / 1',
+    '__ec(__b|1)': '__a + __b',
+    '(__b|2) === "ai"': '__a + __b / 1',
+    '(__b|2) === "au"': '__a + __b / 1',
+});
+```
+
+- A `-` line is a guard. When its condition is true, the rule stops and no case is tried.
+- With `shraum`, `nimitta` has `-` lines only. A `+` line is an error: case conditions live in `shraum`.
+- Guards run before the cases. They are written first, so the reader sees the exclusions first.
+- A guard can look at both words, like a case. A guard that is not a boolean throws a `TypeError`.
+- For one result and several alternatives, use `+` lines in [`createGlaum`](../glaum/README.md).
+
+Move a condition to `nimitta` when it removes repetition. Keep conditions that belong to one case in `shraum`.
 
 ## Pitfall: a solo rule must not match its own output
 
@@ -174,27 +200,9 @@ kyiti;
 
 ## Internals
 
-| file                                        | role                                                          |
-|---------------------------------------------|---------------------------------------------------------------|
-| `shraum.js`                                 | `createShraum`: compiles entries, delegates to `createSandhi` |
-| `evaluate.js`                               | JS AST to closures, one handler per node type                 |
-| `builtins.js`                               | predicates and lookups                                        |
-| EOF                                         |
-| cat > lib/creators/sandhi/README.md <<'EOF' |
-
-## When the rule stays here
-
-`apply-purvarupa` removes the next word through `path.parentPath.node.expressions.pop()`, and `apply-ayadaya` branches on the next word per ending. These are not a condition plus a replacement, so they use `createSandhi` directly.
-
-## API
-
-```js
-createSandhi({
-    rule,
-    options,
-    plugin,
-    msg,
-});
-```
-
-Returns `{rule, plugin: {report, fix, traverse}, msg, options}` for putout. `createShraum` calls it with `when`, `then` and `fix` it builds from the DSL.
+| file          | role                                                            |
+|---------------|-----------------------------------------------------------------|
+| `shraum.js`   | `createShraum`: compiles entries, delegates to `createSandhi`   |
+| `evaluate.js` | JS AST to closures, one handler per node type                   |
+| `builtins.js` | predicates and lookups                                          |
+| `nimitta.js`  | splits `nimitta` lines into guards and cases, shared with Glaum |

@@ -563,3 +563,38 @@ test('bindu: sandhi: vriddhi: o first', (t) => {
     t.equal(code, 'ramO');
     t.end();
 });
+
+test('bindu: iast: input', (t) => {
+    const {code} = bindu('rāma eṣa', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'rāmaiṣa');
+    t.end();
+});
+
+test('bindu: iast: input: from', (t) => {
+    const {code} = bindu('rāma eṣa', {
+        from: 'iast',
+        type: 'iast',
+    });
+    
+    t.equal(code, 'rāmaiṣa');
+    t.end();
+});
+
+test('bindu: iast: input: combining', (t) => {
+    const {code} = bindu('ra\u0304ma e\u1E63a', {
+        type: 'iast',
+    });
+    
+    t.equal(code, 'rāmaiṣa');
+    t.end();
+});
+
+test('bindu: iast: input: devanagari output', (t) => {
+    const {code} = bindu('rāma eṣa');
+    
+    t.equal(code, 'रामैष');
+    t.end();
+});

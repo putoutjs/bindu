@@ -70,13 +70,19 @@ Predicates, true or false, always false on an empty string:
 | `__tavarga` `__cavarga` `__tad`           | dental stops, palatal stops, `t` and `d`  |
 | `__mum` `__saraphe` `__rasha` `__jhash`   | `m M`, `s r`, `r R S z`, voiced stops     |
 | `__savarna`                               | two sounds, equal ignoring case           |
+| `__stu` `__kupu` `__khay` `__murdhanya`   | `s` and dentals, `k kh p ph`, stops, retroflexes |
+| `__scuna` `__shtuna` `__pararupa`         | relations between two sounds, named after the sūtra |
 | `__pragrhya` `__avyaya` `__inflected`     | word predicates, argument is a whole word |
 
 A predicate gets its arguments in order and is false when any of them is an empty string. Several arguments read like the sūtra:
 
 ```js
+export const nimitta = () => [
+    ['-', '!__ak(__a|1)'],
+];
+
 export const shraum = () => ({
-    '__ak(__a|1) && __savarna(__a|1, __b|1)': '__a / 1 + __upper(__a|1) + __b / 1',
+    '__savarna(__a|1, __b|1)': '__a / 1 + __upper(__a|1) + __b / 1',
 });
 ```
 
@@ -90,6 +96,8 @@ Lookups, return a string, unknown sounds stay unchanged:
 | `__aghosha` `__jash`      | voiceless, voiced            |
 | `__talavya` `__anunasika` | palatal, nasal of the class  |
 | `__upper` `__lower`       | `toUpperCase`, `toLowerCase` |
+| `__vriddhi`               | vṛddhi of `e o E O`          |
+| `__ttva`                  | retroflex of `s` and dentals |
 
 Constants, a string used like an identifier, with no call:
 
@@ -98,8 +106,12 @@ Constants, a string used like an identifier, with no call:
 | `__avagraha` | avagraha placeholder `__avagraha__`, the same one `preProcess` puts into words, for `o'` |
 
 ```js
+export const nimitta = () => [
+    ['-', '(__a|2) !== "aH"'],
+];
+
 export const shraum = () => ({
-    '(__a|2) === "aH" && __ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
+    '__ac(__b|1)': '__a / 2 + "o" + __avagraha + __b / 1',
 });
 ```
 
@@ -109,7 +121,7 @@ New built-ins go to `builtins.js` with a row in `builtins.spec.js`.
 
 ```js
 export const shraum = () => ({
-    '(__a|1) === "e" && (__b|1) !== "e"': '__a / 1 + "ay" + __b',
+    '(__a|1) === "e"': '__a / 1 + "ay" + __b',
     '(__a|1) === "o"': '__a / 1 + "av" + __b',
 });
 ```
@@ -125,14 +137,11 @@ export const report = () => `vṛddhireci`;
 
 export const nimitta = () => [
     ['-', '!__aA(__a|1)'],
+    ['-', '!__ec(__b|1)'],
 ];
 
 export const shraum = () => ({
-    '(__b|1) === "e"': '__a + "i" + __b / 1',
-    '(__b|1) === "o"': '__a + "u" + __b / 1',
-    '__ec(__b|1)': '__a + __b',
-    '(__b|2) === "ai"': '__a + __b / 1',
-    '(__b|2) === "au"': '__a + __b / 1',
+    '__ec(__b|1)': '__a / 1 + __vriddhi(__b|1) + __b / 1',
 });
 ```
 
@@ -206,3 +215,32 @@ kyiti;
 | `evaluate.js` | JS AST to closures, one handler per node type                   |
 | `builtins.js` | predicates and lookups                                          |
 | `nimitta.js`  | splits `nimitta` lines into guards and cases, shared with Glaum |
+
+## Flat conditions
+
+Keep every `nimitta` line and every case key one test: no `&&`, no `||`.
+
+| need                              | write                                                                              |
+|-----------------------------------|------------------------------------------------------------------------------------|
+| left sound must be `H`            | guard `['-', '(__a|1) !== "H"']`, the case tests only the right word               |
+| relation between two sounds       | named built-in with the sūtra's name: `__pararupa(__a|1, __b|1)`                   |
+| one of several sounds             | lookup (`__vriddhi`) or a predicate over a list (`__kupu`)                         |
+| same exception in two rules       | the same predicate: guard in the utsarga, case in the apavāda                      |
+
+`apply-eco-yavayava` (6.1.78), the exception is a guard:
+
+```js
+export const nimitta = () => [
+    ['-', '__pararupa(__a|1, __b|1)'],
+];
+```
+
+`apply-padantad` (6.1.109), the same predicate is the case:
+
+```js
+export const nimitta = () => [
+    ['+', '__pararupa(__a|1, __b|1)'],
+];
+```
+
+`__pararupa` is case-sensitive on purpose: `__ec` and friends lowercase their input, and `nE a` must not hit the exception of 6.1.109.

@@ -23,10 +23,14 @@ npm i bindu -g
 
 ## Input
 
-Text is detected automatically as Devanāgarī, IAST or SLP1, or set explicitly
-with the `type` option (`'devanagari'`, `'iast'`, `'slp1'`). Use either a
-single string or a multiline string (a space stays a pada boundary, `+` is a
-morpheme boundary).
+The input script is detected automatically: any Devanāgarī character means
+Devanāgarī, any IAST diacritic (`ā`, `ṣ`, `ḥ`, combining marks too) means IAST,
+anything else is SLP1. Override it with the `from` option (`'devanagari'`,
+`'iast'`, `'slp1'`). The `type` option sets the script of the output, the same
+three values, Devanāgarī by default. A space stays a pada boundary.
+
+Plain ASCII IAST without diacritics (`rama eza`) reads as SLP1, so pass
+`from: 'iast'` if you need it read otherwise.
 
 ```js
 import {bindu} from 'bindu';
@@ -45,6 +49,12 @@ const {places} = bindu('प्रतिएक', {
 
 places[0].message;
 // vṛddhirādaic: ie -> ye
+
+bindu('rāma eṣa', {
+    from: 'iast',
+    type: 'iast',
+});
+// returns {code: 'rāmaiṣa'}
 ```
 
 ## Rules
@@ -77,7 +87,7 @@ places[0].message;
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39);
 - ✅[`hal/apply-shchtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchtva/index.js): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/40);
 - ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73);
-- ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोपधायाः](https://ashtadhyayi.com/sutraani/8/4/60);
+- ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोर्लि](https://ashtadhyayi.com/sutraani/8/4/60);
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [raṣābhyāṃ no ṇaḥ samānapade](https://ashtadhyayi.com/sutraani/8/4/2);
 - ✅[`hal/apply-charva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-charva/index.js): [khari ca](https://ashtadhyayi.com/sutraani/8/4/55);
 
@@ -135,7 +145,7 @@ rAmAH + deva → rAmA deva
 #### apply-satvam
 
 ```
-nis + kRta → niSkRta
+nis + kRta → nizkRta
 ```
 
 #### apply-topadhasha

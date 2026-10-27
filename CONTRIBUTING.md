@@ -8,11 +8,9 @@ with its sūtra number.
 
 - `report`: a human-readable name for the sūtra.
 - `sutra`: the sūtra number, e.g. `'8.2.39'`.
-- Conditions use only flat predicates and lookups, no nested logic.
+- Conditions are flat: no `&&` and no `||` in `nimitta` lines or case keys. See "Flat conditions" in `lib/runners/shraum/README.md`.
 - Fixtures are in SLP1 and come in pairs: `fixture.js` (input) and
   `fixture-<something>.js` (expected output), separated by `;`.
-
-Docs: `lib/runners/sandhi/README.md` "Plugin shape" gets a `sutra` row.
 
 ## Comments
 

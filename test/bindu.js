@@ -210,7 +210,7 @@ test('bindu: sandhi: hal: jashtva: vak', (t) => {
         type: 'iast',
     });
     
-    t.equal(code, 'vāgdeva');
+    t.equal(code, 'vāg deva');
     t.end();
 });
 
@@ -219,7 +219,7 @@ test('bindu: sandhi: hal: jashtva: tat', (t) => {
         type: 'iast',
     });
     
-    t.equal(code, 'tadapi');
+    t.equal(code, 'tad api');
     t.end();
 });
 
@@ -244,7 +244,7 @@ test('bindu: sandhi: hal: chain: jashtva + yan', (t) => {
         type: 'iast',
     });
     
-    t.equal(code, 'vāgeva');
+    t.equal(code, 'vāg eva');
     t.end();
 });
 
@@ -424,7 +424,7 @@ test('bindu: sandhi: hal: charva', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'vAkca');
+    t.equal(code, 'vAk ca');
     t.end();
 });
 
@@ -433,7 +433,7 @@ test('bindu: sandhi: hal: charva: g-k', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'vAkte');
+    t.equal(code, 'vAk te');
     t.end();
 });
 
@@ -442,7 +442,7 @@ test('bindu: sandhi: hal: charva: no voiced last', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'vAgdeva');
+    t.equal(code, 'vAg deva');
     t.end();
 });
 

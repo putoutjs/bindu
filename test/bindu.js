@@ -61,6 +61,13 @@ test('bindu: sandhi: vriddhi', (t) => {
     t.end();
 });
 
+test('bindu: sandhi: vriddhi: devanagari', (t) => {
+    const {code} = bindu('राम एष');
+    
+    t.equal(code, 'रामैष');
+    t.end();
+});
+
 test('bindu: sandhi: ayadaya', (t) => {
     const {code} = bindu('na ulluka', {
         type: 'iast',
@@ -77,7 +84,7 @@ test('bindu: sandhi: ayadaya: not pararupa', (t) => {
         type: 'slp1',
     });
     
-    const expected = `rAmaitad`;
+    const expected = `rAmEtad`;
     
     t.equal(code, expected);
     t.end();
@@ -99,7 +106,7 @@ test('bindu: sandhi: ayadaya: slp1', (t) => {
         type: 'slp1',
     });
     
-    const expected = `antaye'pi`;
+    const expected = `ante'pi`;
     
     t.equal(code, expected);
     t.end();
@@ -154,7 +161,7 @@ test('bindu: sandhi: input: spl1', (t) => {
         type: 'slp1',
     });
     
-    const expected = `antaye'pi`;
+    const expected = `ante'pi`;
     
     t.equal(code, expected);
     t.end();
@@ -553,6 +560,6 @@ test('bindu: sandhi: vriddhi: o first', (t) => {
         type: 'slp1',
     });
     
-    t.equal(code, 'ramau');
+    t.equal(code, 'ramO');
     t.end();
 });

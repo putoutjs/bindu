@@ -114,7 +114,7 @@ Fixtures: `fixture/apply-guna.js` holds `deva, indra;`, `fixture/apply-guna-fix.
 
 ## When the rule stays here
 
-`apply-purvarupa` removes the next word through `path.parentPath.node.expressions.pop()`, and `apply-ayadaya` branches on the next word per ending. These are not a condition plus a result, so they use `createSandhi` directly.
+`apply-purvarupa` removes the next word through `path.parentPath.node.expressions.pop()`. It is not a condition plus a result, so it uses `createSandhi` directly.
 
 ## API
 

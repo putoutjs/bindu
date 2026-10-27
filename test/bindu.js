@@ -284,7 +284,7 @@ test('bindu: sandhi: hal: nasal: m+m', (t) => {
     t.end();
 });
 
-test('bindu: sandhi: hal: shchtva', (t) => {
+test('bindu: sandhi: hal, apply-shchutva', (t) => {
     const {code} = bindu('तत् च', {
         type: 'iast',
     });

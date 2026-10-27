@@ -21,7 +21,12 @@
 npm i bindu -g
 ```
 
-## Usage Example
+## Input
+
+Text is detected automatically as Devanāgarī, IAST or SLP1, or set explicitly
+with the `type` option (`'devanagari'`, `'iast'`, `'slp1'`). Use either a
+single string or a multiline string (a space stays a pada boundary, `+` is a
+morpheme boundary).
 
 ```js
 import {bindu} from 'bindu';

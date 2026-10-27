@@ -1,3 +1,19 @@
+## Rules
+
+All rules export `report` and `sutra`. Conditions are flat, text is SLP1, and
+every rule lives under `lib/sandhi/<group>/apply-<rule>/`. A group spec
+(`lib/sandhi/<group>/index.spec.js`) walks every plugin and asserts it exports
+`report` and `sutra`, and the README "Plugin shape" table documents each rule
+with its sūtra number.
+
+- `report`: a human-readable name for the sūtra.
+- `sutra`: the sūtra number, e.g. `'8.2.39'`.
+- Conditions use only flat predicates and lookups, no nested logic.
+- Fixtures are in SLP1 and come in pairs: `fixture.js` (input) and
+  `fixture-<something>.js` (expected output), separated by `;`.
+
+Docs: `lib/runners/sandhi/README.md` "Plugin shape" gets a `sutra` row.
+
 ## Comments
 
 Never write comments, write clear code instead.

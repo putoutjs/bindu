@@ -48,8 +48,8 @@ const {places} = bindu('प्रतिएक', {
 });
 
 places[0].message;
-// vṛddhirādaic: ie -> ye
 
+// vṛddhirādaic: ie -> ye
 bindu('rāma eṣa', {
     from: 'iast',
     type: 'iast',

@@ -1,3 +1,18 @@
+2026.10.28, v2.5.0
+
+fix:
+- 755db77 README: correct sūtra labels for jashtva, visarga-voiced, visarga-vowel
+- 7b7d8e5 pratyahara: rm sibilants from JASH_MAP
+
+feature:
+- b367943 bindu: IAST
+- ef2a057 improve useless ayadaya
+- e19f64e apply-charva
+- 8a8887f bindu: add shraum builtins (PALATAL_MAP.s, MURDHANYA_MAP, SHCU, KU_PU, KHAY, predicates, lookup)
+- 436b667 bindu: runners: glaum: add
+- bdd987e shraum: __savarna: add
+- 237e5ed bindu: shraum: __avagraha: add
+
 2026.10.25, v2.4.0
 
 feature:

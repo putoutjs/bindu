@@ -469,7 +469,7 @@ test('bindu: sandhi: apply-as-sandhi: rAmas, ca (voiced consonant)', (t) => {
         type: 'slp1',
     });
     
-    const expected = `rAmas ca`;
+    const expected = `rAmaS ca`;
     
     t.equal(code, expected);
     t.end();
@@ -607,6 +607,25 @@ const conflicts = [
     ['vAk eva', 'vAg eva'],
     ['tat api', 'tad api'],
 ];
+
+const visarga = [
+    ['namaH te', 'namas te'],
+    ['kaH cit', 'kaS cit'],
+    ['agniH ca', 'agniS ca'],
+    ['rAmaH karoti', 'rAmaH karoti'],
+    ['namaH Siva', 'namaSSiva'],
+];
+
+for (const [input, expected] of visarga) {
+    test(`bindu: conflict: sassa + shchutva: ${input}`, (t) => {
+        const {code} = bindu(input, {
+            type: 'slp1',
+        });
+        
+        t.equal(code, expected);
+        t.end();
+    });
+}
 
 for (const [input, expected] of conflicts) {
     test(`bindu: conflict: jashtva + shchutva: ${input}`, (t) => {

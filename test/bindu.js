@@ -623,6 +623,8 @@ const visarga = [
     ['devAH ca', 'devAS ca'],
     ['tat wIkA', 'tawwIkA'],
     ['tat mama', 'tanmama'],
+    ['aBi sTA', 'aBizTA'],
+    ['prati stu', 'pratizwu'],
     ['sam kfta', 'saMskfta'],
     ['pari kfta', 'parizkfta'],
     ['sam gacCati', 'saNgacCati'],

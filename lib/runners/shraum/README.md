@@ -70,7 +70,7 @@ Predicates, true or false, always false on an empty string:
 | `__tavarga` `__cavarga` `__tad`           | dental stops, palatal stops, `t` and `d`  |
 | `__mum` `__saraphe` `__rasha` `__jhash`   | `m M`, `s r`, `r R S z`, voiced stops     |
 | `__savarna`                               | two sounds, equal ignoring case           |
-| `__stu` `__kupu` `__khay` `__murdhanya`   | `s` and dentals, `k kh p ph`, stops, retroflexes |
+| `__stu` `__shcu` `__kupu` `__khay` `__murdhanya` | `s` and dentals, `c` and palatals, `k kh p ph`, stops, retroflexes |
 | `__scuna` `__shtuna` `__pararupa`         | relations between two sounds, named after the sūtra |
 | `__pragrhya` `__avyaya` `__inflected`     | word predicates, argument is a whole word |
 

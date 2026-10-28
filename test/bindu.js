@@ -598,3 +598,24 @@ test('bindu: iast: input: devanagari output', (t) => {
     t.equal(code, 'रामैष');
     t.end();
 });
+
+const conflicts = [
+    ['sat jana', 'sajjana'],
+    ['tat jana', 'tajjana'],
+    ['tat ca', 'tacca'],
+    ['tat lokaH', 'tallokaH'],
+    ['vAk eva', 'vAg eva'],
+    ['tat api', 'tad api'],
+];
+
+for (const [input, expected] of conflicts) {
+    test(`bindu: conflict: jashtva + shchutva: ${input}`, (t) => {
+        const {code} = bindu(input, {
+            from: 'slp1',
+            type: 'slp1',
+        });
+        
+        t.equal(code, expected);
+        t.end();
+    });
+}

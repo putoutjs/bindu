@@ -7,7 +7,7 @@
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [CoverageURL]: https://coveralls.io/github/putoutjs/bindu?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master&service=github
+[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master\&service=github
 
 <img width="314" height="235" alt="image" src="https://github.com/user-attachments/assets/ac0247ca-b8ae-4c48-bc67-3422b6b04926" />
 

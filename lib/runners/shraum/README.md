@@ -135,7 +135,7 @@ When a rule changes both words and the right word has to stay, write an array of
 
 ```js
 export const shraum = () => ({
-    '__shtuna(__b|1, __a|1)': '[__a, __ttva(__b|1) + __b / 1]',
+    '__tavarga(__a|1)': '[__a / 1 + __ttva(__a|1), __b]',
 });
 ```
 

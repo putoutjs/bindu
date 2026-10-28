@@ -622,6 +622,8 @@ const visarga = [
     ['devAH gacCanti', 'devA gacCanti'],
     ['devAH ca', 'devAS ca'],
     ['tat wIkA', 'tawwIkA'],
+    ['dfz ti', 'dfzwi'],
+    ['kfz ta', 'kfzwa'],
     ['harir wIkA', 'harizwIkA'],
 ];
 

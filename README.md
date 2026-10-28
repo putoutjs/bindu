@@ -94,6 +94,7 @@ bindu('rāma eṣa', {
 - ✅[`hal/apply-yaro-anunasike`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-yaro-anunasike/index.js): [यरोऽनुनासिकेऽनुनासिको वा](https://ashtadhyayi.com/sutraani/8/4/45) — 8.4.45 (optional, nasal form is the default)
 - ✅[`hal/apply-udah-sthastambhoh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-udah-sthastambhoh/index.js): [उदः स्थास्तम्भोः पूर्वस्य](https://ashtadhyayi.com/sutraani/8/4/61) — 8.4.61
 - ✅[`hal/apply-nash-chavy-aprashan`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-nash-chavy-aprashan/index.js): [नश्छव्यप्रशान्](https://ashtadhyayi.com/sutraani/8/3/7) — 8.3.7
+- ✅[`hal/apply-samparibhyam-karotau`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-samparibhyam-karotau/index.js): [सम्परिभ्यां करोतौ भूषणे](https://ashtadhyayi.com/sutraani/6/1/137) — 6.1.137
 - ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73) — 6.1.73
 - ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोर्लि](https://ashtadhyayi.com/sutraani/8/4/60) — 8.4.60
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [रषाभ्यां नो णः समानपदे](https://ashtadhyayi.com/sutraani/8/4/1) — 8.4.1
@@ -181,6 +182,13 @@ ut + sTAna → utTAna
 
 ```
 mahAn + ca → mahAMS ca
+```
+
+#### apply-samparibhyam-karotau
+
+```
+sam + kfta → saMskfta
+pari + kfta → parizkfta
 ```
 
 #### apply-satvam

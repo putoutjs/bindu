@@ -1,16 +1,14 @@
 ## Rules
 
-All rules export `report` and `sutra`. Conditions are flat, text is SLP1, and
-every rule lives under `lib/sandhi/<group>/apply-<rule>/`. A group spec
-(`lib/sandhi/<group>/index.spec.js`) walks every plugin and asserts it exports
-`report` and `sutra`, and the README "Plugin shape" table documents each rule
-with its sūtra number.
+Every rule lives in `lib/sandhi/<group>/apply-<rule>/` and exports:
 
-- `report`: a human-readable name for the sūtra.
-- `sutra`: the sūtra number, e.g. `'8.2.39'`.
-- Conditions are flat: no `&&` and no `||` in `nimitta` lines or case keys. See "Flat conditions" in `lib/runners/shraum/README.md`.
-- Fixtures are in SLP1 and come in pairs: `fixture.js` (input) and
-  `fixture-<something>.js` (expected output), separated by `;`.
+- `report`: `() => 'name of the sūtra'`
+- `nimitta` (optional), then `shraum` or `karya`.
+
+Text is SLP1. Conditions are flat: no `&&` or `||` in `nimitta`, use negated
+guards, named built-ins and lookups. Fixtures are `name.js` (input `a, b;`) and
+`name-fix.js` (generated with `UPDATE=1 bun run test`). The sūtra number of a
+rule is documented in the README rule list.
 
 ## Comments
 

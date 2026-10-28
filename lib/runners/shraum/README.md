@@ -129,6 +129,16 @@ export const shraum = () => ({
 
 Rules are JavaScript, so constants and template literals are the way to share parts. `__avagraha` is a built-in constant: no import of `#symbols` and no `${avagraha.code}` needed.
 
+### Pair result
+
+When a rule changes both words and the right word has to stay, write an array of two strings. Both words are kept and replaced, the rule is never solo:
+
+```js
+export const shraum = () => ({
+    '__shtuna(__b|1, __a|1)': '[__a, __ttva(__b|1) + __b / 1]',
+});
+```
+
 ## Shared guards: nimitta
 
 When several cases repeat the same condition, move it to `nimitta`. *Nimitta* is the condition that lets a rule apply. It is a list of signed lines `[sign, condition]`:

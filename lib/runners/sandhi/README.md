@@ -27,7 +27,6 @@ import {GUNA, astiIk} from '#pratyahara';
 const {remove} = operator;
 
 export const report = () => 'ād‑guṇaḥ';
-export const sutra = () => '6.1.87';
 
 export const when = ({last, first}) => (last === 'a' || last === 'A') && astiIk(first);
 
@@ -44,7 +43,6 @@ export const fix = ({path, next, name, nextName, guna}) => {
 | export         | called         | purpose                        |
 |----------------|----------------|--------------------------------|
 | `report`       | on a match     | message of the rule            |
-| `sutra`        | never          | sūtra number, e.g. `'6.1.87'`  |
 | `when(ctx)`    | for every pair | `true` if the rule applies     |
 | `then(ctx)`    | after `when`   | optional, returns extra fields |
 | `fix(payload)` | on `--fix`     | rewrites the code              |

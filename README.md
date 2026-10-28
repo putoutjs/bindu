@@ -7,7 +7,7 @@
 [LicenseURL]: https://tldrlegal.com/license/mit-license "MIT License"
 [LicenseIMGURL]: https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [CoverageURL]: https://coveralls.io/github/putoutjs/bindu?branch=master
-[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master\&service=github
+[CoverageIMGURL]: https://coveralls.io/repos/putoutjs/bindu/badge.svg?branch=master&service=github
 
 <img width="314" height="235" alt="image" src="https://github.com/user-attachments/assets/ac0247ca-b8ae-4c48-bc67-3422b6b04926" />
 
@@ -87,6 +87,7 @@ bindu('rāma eṣa', {
 - ✅[`hal/apply-anusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anusvara/index.js): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/4/58) — 8.4.58
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39) — 8.2.39
 - ✅[`hal/apply-shchutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchutva/index.js): [स्तोः श्चुना श्चुः](https://ashtadhyayi.com/sutraani/8/4/40) — 8.4.40
+- ✅[`hal/apply-shtutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shtutva/index.js): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/41) — 8.4.41
 - ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73) — 6.1.73
 - ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोर्लि](https://ashtadhyayi.com/sutraani/8/4/60) — 8.4.60
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [रषाभ्यां नो णः समानपदे](https://ashtadhyayi.com/sutraani/8/4/1) — 8.4.1

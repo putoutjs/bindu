@@ -234,6 +234,7 @@ Keep every `nimitta` line and every case key one test: no `&&`, no `||`.
 | need                              | write                                                                              |
 |-----------------------------------|------------------------------------------------------------------------------------|
 | left sound must be `H`            | guard `['-', '(__a|1) !== "H"']`, the case tests only the right word               |
+| left word must be `aH`            | guard `['-', '(__a|2) !== "aH"']`                                                   |
 | relation between two sounds       | named built-in with the sūtra's name: `__pararupa(__a|1, __b|1)`                   |
 | one of several sounds             | lookup (`__vriddhi`) or a predicate over a list (`__kupu`)                         |
 | same exception in two rules       | the same predicate: guard in the utsarga, case in the apavāda                      |

@@ -79,6 +79,7 @@ bindu('rāma eṣa', {
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15) — 8.3.15
 - ✅[`visarga/apply-visarga-voiced`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-voiced/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
 - ✅[`visarga/apply-visarga-vowel`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-vowel/index.js): [हशि च](https://ashtadhyayi.com/sutraani/6/1/114) — 6.1.114
+- ✅[`visarga/apply-ah-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-ah-sandhi/index.js): [लोपः शाकल्यस्य](https://ashtadhyayi.com/sutraani/8/3/19) — 8.3.19
 - ✅[`visarga/apply-as-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-as-sandhi/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
 - ✅[`visarga/apply-sassa`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-sassa/index.js): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34) — 8.3.34 (optional sibilant form: 8.3.36)
 
@@ -133,14 +134,14 @@ o + a → o'
 ```
 ramas + asti → ramo'sti
 rAmas + asti → rAmo'sti
-ramas + ca → rAmaH ca
+rAmas + ca → rAmaS ca
 ```
 
 #### apply-ah-sandhi
 
 ```
-ramāḥ + asti → ramā'sti
-rAmAH + asti → rAmA'sti
+ramāḥ + asti → ramā asti
+rAmAH + asti → rAmA asti
 ramāḥ + deva → ramā deva
 rAmAH + deva → rAmA deva
 ```

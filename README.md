@@ -75,6 +75,7 @@ bindu('rāma eṣa', {
 #### visarga
 
 - ✅[`visarga/apply-rori`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [रो रि।](https://www.learnsanskrit.org/vyakarana/sounds/hal-sandhi/#:~:text=rule%208.3.15%20below%3A-,%E0%A4%B0%E0%A5%8B%20%E0%A4%B0%E0%A4%BF%E0%A5%A4%20%E0%A5%AE.%E0%A5%A9.%E0%A5%A7%E0%A5%AA,-ro%20ri%20) — 8.3.14
+- ✅[`visarga/apply-rori-dirgha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-rori-dirgha/index.js): [ढ्रलोपे पूर्वस्य दीर्घोऽणः](https://ashtadhyayi.com/sutraani/6/3/111) — 6.3.111
 - ✅[`visarga/apply-bhobhago`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [भोभगोअघोअपूर्वस्य योऽशि](https://ashtadhyayi.com/sutraani/8/3/17) — 8.3.17
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15) — 8.3.15
 - ✅[`visarga/apply-visarga-voiced`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-voiced/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
@@ -144,6 +145,12 @@ ramāḥ + asti → ramā asti
 rAmAH + asti → rAmA asti
 ramāḥ + deva → ramā deva
 rAmAH + deva → rAmA deva
+```
+
+#### apply-rori-dirgha
+
+```
+punar + ramate → punA ramate
 ```
 
 #### apply-satvam

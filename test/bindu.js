@@ -615,6 +615,7 @@ const visarga = [
     ['rAmaH karoti', 'rAmaH karoti'],
     ['namaH Siva', 'namaSSiva'],
     ['agniH te', 'agnis te'],
+    ['punar ramate', 'punA ramate'],
     ['rAmAH asti', 'rAmA asti'],
     ['devAH gacCanti', 'devA gacCanti'],
     ['devAH ca', 'devAS ca'],

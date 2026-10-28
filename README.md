@@ -91,6 +91,7 @@ bindu('rāma eṣa', {
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39) — 8.2.39
 - ✅[`hal/apply-shchutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchutva/index.js): [स्तोः श्चुना श्चुः](https://ashtadhyayi.com/sutraani/8/4/40) — 8.4.40
 - ✅[`hal/apply-shtutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shtutva/index.js): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/41) — 8.4.41
+- ✅[`hal/apply-yaro-anunasike`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-yaro-anunasike/index.js): [यरोऽनुनासिकेऽनुनासिको वा](https://ashtadhyayi.com/sutraani/8/4/45) — 8.4.45 (optional, nasal form is the default)
 - ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73) — 6.1.73
 - ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोर्लि](https://ashtadhyayi.com/sutraani/8/4/60) — 8.4.60
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [रषाभ्यां नो णः समानपदे](https://ashtadhyayi.com/sutraani/8/4/1) — 8.4.1
@@ -159,6 +160,13 @@ punar + ramate → punA ramate
 ```
 nis + kfta → nizkfta
 agniH + karoti → agniH karoti
+```
+
+#### apply-yaro-anunasike
+
+```
+tat + mama → tanmama
+jagat + nAtha → jagannAtha
 ```
 
 #### apply-satvam

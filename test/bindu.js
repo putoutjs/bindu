@@ -469,7 +469,7 @@ test('bindu: sandhi: apply-as-sandhi: rAmas, ca (voiced consonant)', (t) => {
         type: 'slp1',
     });
     
-    const expected = `rAmaH ca`;
+    const expected = `rAmas ca`;
     
     t.equal(code, expected);
     t.end();

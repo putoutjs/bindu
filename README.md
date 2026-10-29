@@ -439,6 +439,10 @@ kavI + api → kavI api
 
 साधु + अपि → साधु अपि
 sADU + api → sADU api
+
+अमी + अत्र → अमी अत्र
+amI + atra → amI atra
+amī + atra → amī atra
 ```
 
 #### apply-guna

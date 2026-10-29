@@ -111,7 +111,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`visarga/apply-visarga-vowel`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-vowel/index.js): [हशि च](https://ashtadhyayi.com/sutraani/6/1/114) — 6.1.114
 - ✅[`visarga/apply-ah-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-ah-sandhi/index.js): [लोपः शाकल्यस्य](https://ashtadhyayi.com/sutraani/8/3/19) — 8.3.19
 - ✅[`visarga/apply-as-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-as-sandhi/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
-- ✅[`visarga/apply-sassa`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-sassa/index.js): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34) — 8.3.34 (optional sibilant form: 8.3.36)
+- ✅[`visarga/apply-sassa`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-sassa/index.js): [विसर्जनीयस्य सः](https://ashtadhyayi.com/sutraani/8/3/34) — 8.3.34 (stays before a khar sibilant: 8.3.35; optional sibilant form: 8.3.36)
 
 #### hal
 
@@ -262,6 +262,16 @@ rAmAH + deva → rAmA deva
 
 ```
 punar + ramate → punA ramate
+```
+
+#### apply-sassa
+
+The visarga stays before a khar followed by a sibilant.
+
+```
+रामः + त्सरति → रामः त्सरति
+rAmaH + tsarati → rAmaH tsarati
+rāmaḥ + tsarati → rāmaḥ tsarati
 ```
 
 #### apply-visarga-sha

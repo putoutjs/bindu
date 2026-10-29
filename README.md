@@ -116,6 +116,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39) — 8.2.39
 - ✅[`hal/apply-shchutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchutva/index.js): [स्तोः श्चुना श्चुः](https://ashtadhyayi.com/sutraani/8/4/40) — 8.4.40
 - ✅[`hal/apply-shtutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shtutva/index.js): [ष्टुना ष्टुः](https://ashtadhyayi.com/sutraani/8/4/41) — 8.4.41
+- ✅[`hal/apply-shtutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shtutva/index.js): [न पदान्ताट्टोरनाम्](https://ashtadhyayi.com/sutraani/8/4/42) — 8.4.42, guard of 8.4.41
 - ✅[`hal/apply-yaro-anunasike`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-yaro-anunasike/index.js): [यरोऽनुनासिकेऽनुनासिको वा](https://ashtadhyayi.com/sutraani/8/4/45) — 8.4.45 (optional, nasal form is the default)
 - ✅[`hal/apply-udah-sthastambhoh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-udah-sthastambhoh/index.js): [उदः स्थास्तम्भोः पूर्वस्य](https://ashtadhyayi.com/sutraani/8/4/61) — 8.4.61
 - ✅[`hal/apply-nash-chavy-aprashan`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-nash-chavy-aprashan/index.js): [नश्छव्यप्रशान्](https://ashtadhyayi.com/sutraani/8/3/7) — 8.3.7
@@ -207,6 +208,20 @@ punar + ramate → punA ramate
 ```
 nis + kfta → nizkfta
 agniH + karoti → agniH karoti
+```
+
+#### apply-shtutva
+
+After a word-final ṭ, ṭh, ḍ, ḍh or ṇ the next word does not change, except nām.
+
+```
+षट् + नाम् → षण्णाम्
+zaw + nAm → zaRRAm
+ṣaṭ + nām → ṣaṇṇām
+
+षट् + ते → षट् ते
+zaw + te → zaw te
+ṣaṭ + te → ṣaṭ te
 ```
 
 #### apply-yaro-anunasike

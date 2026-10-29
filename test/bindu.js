@@ -612,6 +612,8 @@ const visarga = [
     ['namaH te', 'namas te'],
     ['ud mAna', 'unmAna'],
     ['zaw mAm', 'zaRmAm'],
+    ['zaw nAm', 'zaRRAm'],
+    ['zaw te', 'zaw te'],
     ['rAmaH atra', `rAmo'tra`],
     ['rAmaH iti', 'rAma iti'],
     ['punaH api', 'punarapi'],

@@ -271,6 +271,8 @@ tat + SrI → tacCrI
 tat + śrī → tacchrī
 ```
 
+Optional; on by default. Switch it off with `rules: {'sandhi/hal/apply-shash-cho-ati': 'off'}` to get `tac Siva`.
+
 #### apply-satvam
 
 ```

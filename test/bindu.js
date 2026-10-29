@@ -700,3 +700,15 @@ test('bindu: rules: group off', (t) => {
     t.equal(code, 'tat wIkA');
     t.end();
 });
+
+test('bindu: rules: shash-cho-ati: off', (t) => {
+    const {code} = bindu('tat Siva', {
+        type: 'slp1',
+        rules: {
+            'sandhi/hal/apply-shash-cho-ati': 'off',
+        },
+    });
+    
+    t.equal(code, 'tac Siva');
+    t.end();
+});

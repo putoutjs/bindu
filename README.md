@@ -196,6 +196,14 @@ e + a → e'
 o + a → o'
 ```
 
+Pragrhya words are exempt, `deve atra` stays.
+
+```
+देवे + अत्र → देवे अत्र
+deve + atra → deve atra
+deve + atra → deve atra
+```
+
 #### apply-etat-tadoh
 
 saḥ and eṣaḥ lose the visarga before a consonant.

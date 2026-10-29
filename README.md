@@ -115,6 +115,7 @@ and says which form you get by default; switch the rule to get the other one.
 
 #### hal
 
+- ✅[`hal/apply-pumah-khayyampare`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-pumah-khayyampare/index.js): [पुमः खय्यम्परे](https://ashtadhyayi.com/sutraani/8/3/6) — 8.3.6
 - ✅[`hal/apply-mo-nusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-mo-nusvara/index.js): [मोऽनुस्वारः](https://ashtadhyayi.com/sutraani/8/3/23) — 8.3.23
 - ✅[`hal/apply-anusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anusvara/index.js): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/4/58) — 8.4.58
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39) — 8.2.39
@@ -136,6 +137,21 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [रषाभ्यां नो णः समानपदे](https://ashtadhyayi.com/sutraani/8/4/1) — 8.4.1
 - ✅[`hal/apply-charva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-charva/index.js): [खरि च](https://ashtadhyayi.com/sutraani/8/4/55) — 8.4.55
 - ✅[`hal/apply-satvam`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-satvam/index.js): [आदेशप्रत्यययोः](https://ashtadhyayi.com/sutraani/8/3/59) — 8.3.59
+
+#### apply-pumah-khayyampare
+
+The word pum before a voiceless or aspirated stop (khay) that is followed by a vowel,
+h, y, v, r, l or a nasal gets an s after the anusvāra.
+
+```
+पुम् + कोकिल → पुंस् कोकिल
+pum + kokila → puMs kokila
+pum + kokila → puṃs kokila
+
+पुम् + चक्र → पुंश् चक्र
+pum + cakra → puMS cakra
+pum + cakra → puṃś cakra
+```
 
 #### apply-mo-nusvara
 

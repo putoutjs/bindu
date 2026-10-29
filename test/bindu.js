@@ -677,6 +677,11 @@ const visarga = [
     ['iti atra', 'ityatra'],
     ['rAmaH tsarati', 'rAmaH tsarati'],
     ['kaH tsarati', 'kaH tsarati'],
+    ['pum kokila', 'puMs kokila'],
+    ['pum tva', 'puMs tva'],
+    ['pum cakra', 'puMS cakra'],
+    ['pum gacCati', 'puNgacCati'],
+    ['harim kokila', 'hariNkokila'],
 ];
 
 for (const [input, expected] of visarga) {

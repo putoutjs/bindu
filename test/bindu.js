@@ -727,3 +727,24 @@ test('bindu: rules: shash-cho-ati: off', (t) => {
     t.equal(code, 'tac Siva');
     t.end();
 });
+
+test('bindu: rules: jhayo-ho: off by default', (t) => {
+    const {code} = bindu('tat hi', {
+        type: 'slp1',
+    });
+    
+    t.equal(code, 'tad hi');
+    t.end();
+});
+
+test('bindu: rules: jhayo-ho: on', (t) => {
+    const {code} = bindu('tat hi', {
+        type: 'slp1',
+        rules: {
+            'sandhi/hal/apply-jhayo-ho': 'on',
+        },
+    });
+    
+    t.equal(code, 'tadDi');
+    t.end();
+});

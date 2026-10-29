@@ -93,7 +93,7 @@ Lookups, return a string, unknown sounds stay unchanged:
 | name                      | result                       |
 |---------------------------|------------------------------|
 | `__yan` `__guna`          | semivowel, guṇa              |
-| `__aghosha` `__jash`      | voiceless, voiced            |
+| `__aghosha` `__jash` `__mahaprana` | voiceless, voiced, aspirated voiced |
 | `__talavya` `__anunasika` | palatal, nasal of the class  |
 | `__upper` `__lower`       | `toUpperCase`, `toLowerCase` |
 | `__vriddhi`               | vṛddhi of `e o E O`          |

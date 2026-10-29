@@ -145,6 +145,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-nash-chavy-aprashan`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-nash-chavy-aprashan/index.js): [नश्छव्यप्रशान्](https://ashtadhyayi.com/sutraani/8/3/7) — 8.3.7
 - ✅[`hal/apply-samparibhyam-karotau`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-samparibhyam-karotau/index.js): [सम्परिभ्यां करोतौ भूषणे](https://ashtadhyayi.com/sutraani/6/1/137) — 6.1.137
 - ✅[`hal/apply-upasargat-satvam`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-upasargat-satvam/index.js): [उपसर्गात् सुनोतिसुवतिस्यतिस्तौतिस्तोभतिस्थासेनयसेधसिचसञ्जस्वञ्जाम्](https://ashtadhyayi.com/sutraani/8/3/65) — 8.3.65
+- ✅[`hal/apply-sadiraprateh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-sadiraprateh/index.js): [सदिरप्रतेः](https://ashtadhyayi.com/sutraani/8/3/66) — 8.3.66
 - ✅[`hal/apply-shash-cho-ati`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shash-cho-ati/index.js): [शश्छोऽटि](https://ashtadhyayi.com/sutraani/8/4/63) — 8.4.63 (optional, the aspirated form is the default)
 - ✅[`hal/apply-jhayo-ho`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jhayo-ho/index.js): [झयो होऽन्यतरस्याम्](https://ashtadhyayi.com/sutraani/8/4/62) — 8.4.62 (optional, off by default)
 - ✅[`hal/apply-anmano`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anmano/index.js): [आङ्माङोश्च](https://ashtadhyayi.com/sutraani/6/1/74) — 6.1.74
@@ -373,6 +374,17 @@ mahAn + ca → mahAMS ca
 ```
 sam + kfta → saMskfta
 pari + kfta → parizkfta
+```
+
+#### apply-sadiraprateh
+
+After an upasarga that ends in `i`, `u`, `e`, `o` or a velar, the root `sad`
+gets `ṣ`, except after `prati`.
+
+```
+नि + सीदति → निषीदति
+ni + sIdati → nizIdati
+ni + sīdati → niṣīdati
 ```
 
 #### apply-upasargat-satvam

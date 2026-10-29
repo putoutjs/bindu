@@ -101,6 +101,28 @@ bindu('tat wIkA', {
 Some sūtras allow two correct forms. The rule list marks them "optional"
 and says which form you get by default; switch the rule to get the other one.
 
+## Not supported
+
+Some sūtras need to know the morphemes of a word, and a text does not carry
+them. Their results differ for the same letters, so bindu applies the general
+rule instead:
+
+| sūtra | needs | bindu gives |
+|---|---|---|
+| 6.1.94 | `pra` + a root that starts with `e`: `prejate` | `prEjate` |
+| 6.1.89 | `pra` + `edhate`: `praidhate` | `prEdhate` |
+| 6.1.91 | `upa` + a root that starts with `ṛ`: `upārcchati` | `uparcCati` |
+| 6.1.107 | a stem + the ending `am`: `rāmam` | `rAmAm` |
+| 8.3.25 | `samrāj` | `saM rAj` |
+| 8.4.1, 8.4.2, 8.4.14 | `ṇ` inside a word: `rāmeṇa`, `praṇayati` | no change |
+| 8.2.30, 8.2.31, 8.2.40 | endings of verbs: `vakti`, `labdha` | no change |
+
+Two more limits:
+
+- A last word without punctuation gets no pause: write `.` after it to get
+  `rāmaḥ.` from `rāmas.`
+- Vedic accent marks are not letters: they end the word.
+
 ## Rules
 
 ### Sandhi

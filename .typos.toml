@@ -1,2 +1,11 @@
 [files]
-extend-exclude= ["ChangeLog", "**/fixture", "particles.js"]
+extend-exclude = ["ChangeLog", "fixture/", "*.spec.*"]
+
+[default.extend-identifiers]
+__nam = "__nam"
+tathA = "tathA"
+
+[default.extend-words]
+nam = "nam"
+aci = "aci"
+tath = "tath"

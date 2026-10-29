@@ -125,6 +125,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`visarga/apply-etat-tadoh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-etat-tadoh/index.js): [एतत्तदोः सुलोपोऽकोरनञ्समासे हलि](https://ashtadhyayi.com/sutraani/6/1/132) — 6.1.132
 - ✅[`visarga/apply-hali-sarvesham`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-hali-sarvesham/index.js): [हलि सर्वेषाम्](https://ashtadhyayi.com/sutraani/8/3/22) — 8.3.22
 - ✅[`visarga/apply-visarga-voiced`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-voiced/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
+- ✅[`visarga/apply-ruh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-ruh/index.js): [ससजुषो रुः](https://ashtadhyayi.com/sutraani/8/2/66) — 8.2.66
 - ✅[`visarga/apply-visarga-vowel`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-vowel/index.js): [हशि च](https://ashtadhyayi.com/sutraani/6/1/114) — 6.1.114
 - ✅[`visarga/apply-ah-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-ah-sandhi/index.js): [लोपः शाकल्यस्य](https://ashtadhyayi.com/sutraani/8/3/19) — 8.3.19
 - ✅[`visarga/apply-as-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-as-sandhi/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
@@ -263,6 +264,22 @@ bhoḥ + deva → bho deva
 ramas + asti → ramo'sti
 rAmas + asti → rAmo'sti
 rAmas + ca → rAmaS ca
+```
+
+#### apply-ruh
+
+A visarga after any vowel except `a` and `ā` becomes `r` before a voiced
+consonant. The words `punaḥ`, `antaḥ`, `prātaḥ`, `svaḥ`, `ahaḥ` come from `r`
+and keep it as well.
+
+```
+हरिः + गच्छति → हरिर् गच्छति
+hariH + gacCati → harir gacCati
+hariḥ + gacchati → harir gacchati
+
+पुनः + गच्छति → पुनर् गच्छति
+punaH + gacCati → punar gacCati
+punaḥ + gacchati → punar gacchati
 ```
 
 #### apply-visarga-vowel

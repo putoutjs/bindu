@@ -707,6 +707,61 @@ for (const [input, expected] of conflicts) {
     });
 }
 
+const text = [
+    ['rAmaH atra.', `rAmo'tra.`],
+    ['rAmaH atra .', `rAmo'tra .`],
+    ['rAmaH, atra', 'rAmaH, atra'],
+    ['rAmaH atra; hariH atra', `rAmo'tra; hariratra`],
+    ['rAmaH\natra', 'rAmaH\natra'],
+    ['rAmaH  atra', 'rAmaH  atra'],
+    [' rAmaH atra ', ` rAmo'tra `],
+    ['rAma 1 iti', 'rAma 1 iti'],
+    ['(rAmaH atra)', `(rAmo'tra)`],
+    ['"rAmaH atra"', `"rAmo'tra"`],
+    ['rAma-atra', 'rAma-atra'],
+    ['tat ca. tat ca', 'tacca. tacca'],
+    ['12', '12'],
+    ['   ', '   '],
+    ['', ''],
+];
+
+for (const [input, expected] of text) {
+    test(`bindu: text: ${JSON.stringify(input)}`, (t) => {
+        const {code} = bindu(input, {
+            from: 'slp1',
+            type: 'slp1',
+        });
+        
+        t.equal(code, expected);
+        t.end();
+    });
+}
+
+test('bindu: text: devanagari: danda', (t) => {
+    const {code} = bindu('रामः अत्र। हरिः अत्र ॥ १२');
+    
+    t.equal(code, 'रामोऽत्र। हरिरत्र ॥ १२');
+    t.end();
+});
+
+test('bindu: text: iast: danda', (t) => {
+    const {code} = bindu('rāmaḥ atra. hariḥ atra', {
+        type: 'iast',
+    });
+    
+    t.equal(code, `rāmo'tra. hariratra`);
+    t.end();
+});
+
+test('bindu: fix: false: code is the text', (t) => {
+    const {code} = bindu('rAmaH atra', {
+        fix: false,
+    });
+    
+    t.equal(code, 'rAmaH atra');
+    t.end();
+});
+
 test('bindu: rules: off', (t) => {
     const {code} = bindu('tat wIkA', {
         type: 'slp1',

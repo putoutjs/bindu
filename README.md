@@ -57,6 +57,23 @@ bindu('rāma eṣa', {
 // returns {code: 'rāmaiṣa'}
 ```
 
+## Text
+
+Sandhi is applied between words separated by one space. Everything else stays
+as written: punctuation, danda, digits, quotes, line breaks and extra spaces.
+A line break, a punctuation mark or a digit ends the sandhi: the words around
+it do not meet.
+
+```
+रामः अत्र। हरिः अत्र → रामोऽत्र। हरिरत्र
+rAmaH atra. hariH atra → rAmo'tra. hariratra
+rāmaḥ atra. hariḥ atra → rāmo'tra. hariratra
+```
+
+With `fix: false` the result has the text unchanged, and `places` tells what
+would change. `position.line` is the number of the group of words, counted from
+one.
+
 ## Options
 
 | option  | default        | what it does |

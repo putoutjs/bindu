@@ -66,7 +66,7 @@ Predicates, true or false, always false on an empty string:
 |-------------------------------------------|-------------------------------------------|
 | `__ac` `__ik` `__ak` `__ec`               | vowel pratyāhāras                         |
 | `__hal` `__khar` `__ghoshavat` `__ushman` | consonant groups                          |
-| `__hrasva` `__aA` `__nasal`               | short vowels, `a` and `A`, nasal consonants |
+| `__hrasva` `__dirgha` `__aA` `__nasal`    | short vowels, long vowels, `a` and `A`, nasal consonants |
 | `__tavarga` `__cavarga` `__tad`           | dental stops, palatal stops, `t` and `d`  |
 | `__mum` `__saraphe` `__rasha` `__jhash`   | `m M`, `s r`, `r R S z`, voiced stops     |
 | `__savarna`                               | two sounds, equal ignoring case           |

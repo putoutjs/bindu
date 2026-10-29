@@ -748,3 +748,15 @@ test('bindu: rules: jhayo-ho: on', (t) => {
     t.equal(code, 'tadDi');
     t.end();
 });
+
+test('bindu: rules: padantad-va: on', (t) => {
+    const {code} = bindu('vidyA Cattra', {
+        type: 'slp1',
+        rules: {
+            'sandhi/hal/apply-padantad-va': 'on',
+        },
+    });
+    
+    t.equal(code, 'vidyAcCattra');
+    t.end();
+});

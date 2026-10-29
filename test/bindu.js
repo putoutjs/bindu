@@ -208,7 +208,7 @@ test('bindu: sandhi: hal: anusvara: yoga', (t) => {
         type: 'iast',
     });
     
-    t.equal(code, 'sañyoga');
+    t.equal(code, 'saṃ yoga');
     t.end();
 });
 
@@ -610,6 +610,9 @@ const conflicts = [
 
 const visarga = [
     ['namaH te', 'namas te'],
+    ['harim vande', 'hariM vande'],
+    ['kim karoti', 'kiNkaroti'],
+    ['kim malam', 'kimmalam'],
     ['ud mAna', 'unmAna'],
     ['zaw mAm', 'zaRmAm'],
     ['zaw nAm', 'zaRRAm'],

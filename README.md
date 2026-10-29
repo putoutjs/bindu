@@ -112,6 +112,7 @@ and says which form you get by default; switch the rule to get the other one.
 
 #### hal
 
+- ✅[`hal/apply-mo-nusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-mo-nusvara/index.js): [मोऽनुस्वारः](https://ashtadhyayi.com/sutraani/8/3/23) — 8.3.23
 - ✅[`hal/apply-anusvara`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anusvara/index.js): [अनुस्वारस्य ययि परसवर्णः](https://ashtadhyayi.com/sutraani/8/4/58) — 8.4.58
 - ✅[`hal/apply-jashtva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jashtva/index.js): [झलां जशोऽन्ते](https://ashtadhyayi.com/sutraani/8/2/39) — 8.2.39
 - ✅[`hal/apply-shchutva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shchutva/index.js): [स्तोः श्चुना श्चुः](https://ashtadhyayi.com/sutraani/8/4/40) — 8.4.40
@@ -129,6 +130,21 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-charva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-charva/index.js): [खरि च](https://ashtadhyayi.com/sutraani/8/4/55) — 8.4.55
 - ✅[`hal/apply-satvam`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-satvam/index.js): [आदेशप्रत्यययोः](https://ashtadhyayi.com/sutraani/8/3/59) — 8.3.59
 
+#### apply-mo-nusvara
+
+A final m before a consonant becomes anusvāra. Before a stop the anusvāra
+then becomes the nasal of that stop (apply-anusvara).
+
+```
+हरिम् + वन्दे → हरिं वन्दे
+harim + vande → hariM vande
+harim + vande → hariṃ vande
+
+किम् + करोति → किङ्करोति
+kim + karoti → kiNkaroti
+kim + karoti → kiṅkaroti
+```
+
 #### apply-anusvara
 
 ```
@@ -136,9 +152,9 @@ and says which form you get by default; switch the rule to get the other one.
 saM + gacCati → saNgacCati
 saṃ + gacchati → saṅgacchati
 
-सम् + योग → संयोग
-saM + yoga → saYyoga
-saṃ + yoga → sañyoga
+सम् + योग → सं योग
+saM + yoga → saM yoga
+saṃ + yoga → saṃ yoga
 ```
 
 #### apply-jashtva

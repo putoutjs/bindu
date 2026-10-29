@@ -72,7 +72,7 @@ Predicates, true or false, always false on an empty string:
 | `__savarna`                               | two sounds, equal ignoring case           |
 | `__stu` `__shcu` `__kupu` `__khay` `__jhay` `__sparsha` `__murdhanya` `__tu` | `s` and dentals, `c` and palatals, `k kh p ph`, stops, stops without nasals, stops with nasals, retroflexes, retroflex stops |
 | `__scuna` `__shtuna` `__pararupa` `__naschavy` | relations between two sounds, named after the sūtra |
-| `__saH` `__pragrhya` `__avyaya` `__inflected` `__upasarga` `__apratyaya` `__ud` `__ang` `__karotau` `__napadantat` `__inku` `__shashcho` | word predicates, argument is a whole word |
+| `__saH` `__pragrhya` `__avyaya` `__inflected` `__upasarga` `__apratyaya` `__ud` `__etattad` `__ang` `__karotau` `__napadantat` `__inku` `__shashcho` | word predicates, argument is a whole word |
 
 A predicate gets its arguments in order and is false when any of them is an empty string. Several arguments read like the sūtra:
 

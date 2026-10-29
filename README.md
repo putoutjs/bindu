@@ -265,6 +265,10 @@ prati + stu → pratizwu
 
 ```
 tat + Siva → tacCiva
+
+तत् + श्री → तच्छ्री
+tat + SrI → tacCrI
+tat + śrī → tacchrī
 ```
 
 #### apply-satvam

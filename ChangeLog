@@ -1,3 +1,38 @@
+2026.10.29, v2.6.0
+
+fix:
+- ee0ad87 shraum: __shashcho: at
+- 891c413 apply-shtutva: na padantat tor anam
+- 2d3fef4 apply-yaro-anunasike: all stops
+- 9f53d79 apply-rori: keep aH for s-origin visarga
+- a93153f apply-satvam: restrict to upasarga
+
+feature:
+- 8c13808 apply-padantad-va: add
+- 486fa31 apply-jhayo-ho: add
+- 5beabb5 apply-namuna: add
+- 118a75f apply-hali-sarvesham: add
+- bf6d1e5 apply-etat-tadoh: add
+- a3d9e75 apply-anmano: add
+- 507fcec apply-omang: add
+- 77c4ea4 apply-mo-nusvara: add
+- b3880a0 bindu: rules
+- 7329037 apply-shash-cho-ati: add
+- c2301bf apply-upasargat-satvam: add
+- 1a5b14f apply-samparibhyam-karotau: add
+- 242e068 apply-nash-chavy-aprashan: add
+- 755c2fe apply-udah-sthastambhoh: add
+- 8a60036 apply-yaro-anunasike: add
+- f3e73d7 apply-shtutva: right side
+- 6ac6081 shraum: dynamic pair result
+- a9f165c apply-visarga-sha: add
+- 0b8caea apply-rori-dirgha: add
+- 66c5644 apply-ah-sandhi: add
+- e2ec4f1 apply-shtutva: add
+- 063311e apply-shchutva: s case
+- fb157aa apply-sassa: khar case
+- 5ff3ca2 shraum: __shcu: add
+
 2026.10.28, v2.5.0
 
 fix:

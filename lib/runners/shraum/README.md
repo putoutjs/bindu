@@ -105,6 +105,7 @@ Constants, a string used like an identifier, with no call:
 |--------------|------------------------------------------------------------------------------------------|
 | `__avagraha` | avagraha placeholder `__avagraha__`, the same one `preProcess` puts into words, for `o'` |
 | `__hiatus` | hiatus placeholder `__hiatus__`, printed as a space between two vowels that stay apart (`rAmA asti`) |
+| `__danda` | pause placeholder `__danda__`: `preProcess` puts it after the last word before a punctuation mark; `__b === __danda` tells a rule that a pause follows |
 
 ```js
 export const nimitta = () => [

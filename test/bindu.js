@@ -736,6 +736,13 @@ const text = [
     ['"rAmaH atra"', `"rAmo'tra"`],
     ['rAma-atra', 'rAma-atra'],
     ['tat ca. tat ca', 'tacca. tacca'],
+    ['rAmas, atra', 'rAmaH, atra'],
+    ['rAmas.', 'rAmaH.'],
+    ['punar;', 'punaH;'],
+    ['rAmas atra.', `rAmo'tra.`],
+    ['tat.', 'tat.'],
+    ['nis.', 'niH.'],
+    ['rAmas', 'rAmas'],
     ['12', '12'],
     ['   ', '   '],
     ['', ''],
@@ -757,6 +764,13 @@ test('bindu: text: devanagari: danda', (t) => {
     const {code} = bindu('रामः अत्र। हरिः अत्र ॥ १२');
     
     t.equal(code, 'रामोऽत्र। हरिरत्र ॥ १२');
+    t.end();
+});
+
+test('bindu: text: devanagari: pause', (t) => {
+    const {code} = bindu('रामस्।');
+    
+    t.equal(code, 'रामः।');
     t.end();
 });
 

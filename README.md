@@ -62,7 +62,9 @@ bindu('rāma eṣa', {
 Sandhi is applied between words separated by one space. Everything else stays
 as written: punctuation, danda, digits, quotes, line breaks and extra spaces.
 A line break, a punctuation mark or a digit ends the sandhi: the words around
-it do not meet.
+it do not meet. A punctuation mark (`. , ; : ! ? | । ॥`) is also a pause: a
+final `s` or `r` before it becomes a visarga, and the final stop before it is
+kept as written.
 
 ```
 रामः अत्र। हरिः अत्र → रामोऽत्र। हरिरत्र
@@ -265,6 +267,20 @@ bhoḥ + deva → bho deva
 ramas + asti → ramo'sti
 rAmas + asti → rAmo'sti
 rAmas + ca → rAmaS ca
+```
+
+#### apply-kharovasana
+
+Before a voiceless consonant or a pause, a final `s` or `r` becomes a visarga.
+
+```
+रामस् + करोति → रामः करोति
+rAmas + karoti → rAmaH karoti
+rāmas + karoti → rāmaḥ karoti
+
+रामस्। → रामः।
+rAmas. → rAmaH.
+rāmas. → rāmaḥ.
 ```
 
 #### apply-ruh

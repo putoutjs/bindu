@@ -170,6 +170,23 @@ rAmas + asti → rAmo'sti
 rAmas + ca → rAmaS ca
 ```
 
+#### apply-visarga-vowel
+
+A visarga after short `a` becomes `o` before `a` (the `a` turns into an
+avagraha) and disappears before any other vowel. A written `aḥ` is read as
+coming from `s`; `punaḥ`, `prātaḥ`, `antaḥ`, `svaḥ`, `ahaḥ` come from `r` and
+keep it (`punar api → punarapi`).
+
+```
+रामः + अत्र → रामोऽत्र
+rAmaH + atra → rAmo'tra
+rāmaḥ + atra → rāmo'tra
+
+रामः + इति → राम इति
+rAmaH + iti → rAma iti
+rāmaḥ + iti → rāma iti
+```
+
 #### apply-ah-sandhi
 
 ```

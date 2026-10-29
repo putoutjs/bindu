@@ -269,7 +269,7 @@ test('bindu: sandhi: visarga: vowel', (t) => {
         type: 'iast',
     });
     
-    t.equal(code, 'nararapi');
+    t.equal(code, `naro'pi`);
     t.end();
 });
 
@@ -491,7 +491,7 @@ test('bindu: sandhi: apply-aH-sandhi: no-short rAmaH, asti', (t) => {
         type: 'slp1',
     });
     
-    const expected = 'rAmarasti';
+    const expected = `rAmo'sti`;
     
     t.equal(code, expected);
     t.end();
@@ -610,6 +610,10 @@ const conflicts = [
 
 const visarga = [
     ['namaH te', 'namas te'],
+    ['rAmaH atra', `rAmo'tra`],
+    ['rAmaH iti', 'rAma iti'],
+    ['punaH api', 'punarapi'],
+    ['hariH atra', 'hariratra'],
     ['kaH cit', 'kaS cit'],
     ['agniH ca', 'agniS ca'],
     ['rAmaH karoti', 'rAmaH karoti'],

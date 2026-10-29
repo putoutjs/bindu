@@ -57,6 +57,31 @@ bindu('rāma eṣa', {
 // returns {code: 'rāmaiṣa'}
 ```
 
+## Options
+
+| option  | default        | what it does |
+|---------|----------------|--------------|
+| `type`  | `'devanagari'` | script of the result: `'devanagari'`, `'iast'`, `'slp1'` |
+| `from`  | detected       | script of the input, same values |
+| `fix`   | `true`         | `false` only reports what would change, in `places` |
+| `rules` | `{}`           | switch rules on or off by name |
+
+Every rule has a name: its group and its folder, like `sandhi/hal/apply-shtutva`.
+Switch one rule off, a whole group off, or an optional rule on:
+
+```js
+bindu('tat wIkA', {
+    type: 'slp1',
+    rules: {
+        'sandhi/hal/apply-shtutva': 'off',
+    },
+});
+// returns {code: 'tat wIkA'}
+```
+
+Some sūtras allow two correct forms. The rule list marks them "optional"
+and says which form you get by default; switch the rule to get the other one.
+
 ## Rules
 
 ### Sandhi

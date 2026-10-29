@@ -667,3 +667,27 @@ for (const [input, expected] of conflicts) {
         t.end();
     });
 }
+
+test('bindu: rules: off', (t) => {
+    const {code} = bindu('tat wIkA', {
+        type: 'slp1',
+        rules: {
+            'sandhi/hal/apply-shtutva': 'off',
+        },
+    });
+    
+    t.equal(code, 'tat wIkA');
+    t.end();
+});
+
+test('bindu: rules: group off', (t) => {
+    const {code} = bindu('tat wIkA', {
+        type: 'slp1',
+        rules: {
+            'sandhi/hal': 'off',
+        },
+    });
+    
+    t.equal(code, 'tat wIkA');
+    t.end();
+});

@@ -150,6 +150,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-sadiraprateh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-sadiraprateh/index.js): [सदिरप्रतेः](https://ashtadhyayi.com/sutraani/8/3/66) — 8.3.66
 - ✅[`hal/apply-shash-cho-ati`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shash-cho-ati/index.js): [शश्छोऽटि](https://ashtadhyayi.com/sutraani/8/4/63) — 8.4.63 (optional, the aspirated form is the default)
 - ✅[`hal/apply-jhayo-ho`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-jhayo-ho/index.js): [झयो होऽन्यतरस्याम्](https://ashtadhyayi.com/sutraani/8/4/62) — 8.4.62 (optional, off by default)
+- ✅[`hal/apply-vavasane`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-vavasane/index.js): [वावसाने](https://ashtadhyayi.com/sutraani/8/4/56) — 8.4.56 (optional, off by default)
 - ✅[`hal/apply-anmano`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anmano/index.js): [आङ्माङोश्च](https://ashtadhyayi.com/sutraani/6/1/74) — 6.1.74
 - ✅[`hal/apply-namuna`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-namuna/index.js): [ङमो ह्रस्वादचि ङमुण्नित्यम्](https://ashtadhyayi.com/sutraani/8/3/32) — 8.3.32
 - ✅[`hal/apply-padantad-va`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-padantad-va/index.js): [पदान्ताद्वा](https://ashtadhyayi.com/sutraani/6/1/76) — 6.1.76 (optional, off by default)
@@ -426,6 +427,19 @@ Optional; on by default. Switch it off with `rules: {'sandhi/hal/apply-shash-cho
 
 ```
 nis + kRta → nizkRta
+```
+
+#### apply-vavasane
+
+Before a pause, a final voiced stop may become voiceless. Optional, off by
+default.
+
+With `rules: {'sandhi/hal/apply-vavasane': 'on'}`:
+
+```
+वाग्। → वाक्।
+vAg. → vAk.
+vāg. → vāk.
 ```
 
 #### apply-jhayo-ho

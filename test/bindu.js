@@ -860,3 +860,26 @@ test('bindu: rules: padantad-va: on', (t) => {
     t.equal(code, 'vidyAcCattra');
     t.end();
 });
+
+test('bindu: rules: vavasane: off by default', (t) => {
+    const {code} = bindu('vAg.', {
+        type: 'slp1',
+        from: 'slp1',
+    });
+    
+    t.equal(code, 'vAg.');
+    t.end();
+});
+
+test('bindu: rules: vavasane: on', (t) => {
+    const {code} = bindu('vAg. tad.', {
+        type: 'slp1',
+        from: 'slp1',
+        rules: {
+            'sandhi/hal/apply-vavasane': 'on',
+        },
+    });
+    
+    t.equal(code, 'vAk. tat.');
+    t.end();
+});

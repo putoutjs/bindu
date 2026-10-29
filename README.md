@@ -493,6 +493,20 @@ au + a  → āva
 au + i  → āvi
 ```
 
+##### Vocative and non-pragrhya
+
+Pragrhya words such as `deve` are exempt (see apply-pragrhya).
+
+```
+हरे + एव → हरयेव
+hare + eva → harayeva
+hare + eva → harayeva
+
+नौ + इह → नाविह
+nO + iha → nAviha
+nau + iha → nāviha
+```
+
 #### apply-dirgha
 
 ```

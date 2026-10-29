@@ -128,6 +128,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`hal/apply-upasargat-satvam`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-upasargat-satvam/index.js): [उपसर्गात् सुनोतिसुवतिस्यतिस्तौतिस्तोभतिस्थासेनयसेधसिचसञ्जस्वञ्जाम्](https://ashtadhyayi.com/sutraani/8/3/65) — 8.3.65
 - ✅[`hal/apply-shash-cho-ati`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-shash-cho-ati/index.js): [शश्छोऽटि](https://ashtadhyayi.com/sutraani/8/4/63) — 8.4.63 (optional, the aspirated form is the default)
 - ✅[`hal/apply-anmano`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-anmano/index.js): [आङ्माङोश्च](https://ashtadhyayi.com/sutraani/6/1/74) — 6.1.74
+- ✅[`hal/apply-namuna`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-namuna/index.js): [ङमो ह्रस्वादचि ङमुण्नित्यम्](https://ashtadhyayi.com/sutraani/8/3/32) — 8.3.32
 - ✅[`hal/apply-cch`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-cch/index.js): [छे च](https://ashtadhyayi.com/sutraani/6/1/73) — 6.1.73
 - ✅[`hal/apply-topadhasha`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-topadhasha/index.js): [तोर्लि](https://ashtadhyayi.com/sutraani/8/4/60) — 8.4.60
 - ✅[`hal/apply-natva`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/hal/apply-natva/index.js): [रषाभ्यां नो णः समानपदे](https://ashtadhyayi.com/sutraani/8/4/1) — 8.4.1
@@ -337,6 +338,16 @@ After the words ā and mā, ch becomes cch.
 आ + छाया → आच्छाया
 A + CAyA → AcCAyA
 ā + chāyā → ācchāyā
+```
+
+#### apply-namuna
+
+A final ṅ, ṇ or n after a short vowel is doubled before a vowel.
+
+```
+कुर्वन् + आस्ते → कुर्वन्नास्ते
+kurvan + Aste → kurvannAste
+kurvan + āste → kurvannāste
 ```
 
 #### apply-topadhasha

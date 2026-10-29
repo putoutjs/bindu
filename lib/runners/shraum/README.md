@@ -67,11 +67,11 @@ Predicates, true or false, always false on an empty string:
 | `__ac` `__ik` `__ak` `__ec`               | vowel pratyāhāras                         |
 | `__hal` `__khar` `__ghoshavat` `__ushman` | consonant groups                          |
 | `__hrasva` `__dirgha` `__aA` `__nasal`    | short vowels, long vowels, `a` and `A`, nasal consonants |
-| `__tavarga` `__cavarga` `__tad`           | dental stops, palatal stops, `t` and `d`  |
-| `__mum` `__saraphe` `__rasha` `__jhash`   | `m M`, `s r`, `r R S z`, voiced stops     |
+| `__tavarga` `__tad`                       | dental stops, `t` and `d`                 |
+| `__saraphe` `__rasha` `__jhash`           | `s r`, `r R S z`, voiced stops            |
 | `__savarna`                               | two sounds, equal ignoring case           |
-| `__stu` `__shcu` `__kupu` `__khay` `__jhay` `__sparsha` `__murdhanya` `__tu` | `s` and dentals, `c` and palatals, `k kh p ph`, stops, stops without nasals, stops with nasals, retroflexes, retroflex stops |
-| `__scuna` `__shtuna` `__pararupa` `__naschavy` | relations between two sounds, named after the sūtra |
+| `__shcu` `__kupu` `__khay` `__jhay` `__sparsha` `__tu` | `c` and palatals, `k kh p ph`, stops, stops without nasals, stops with nasals, retroflex stops |
+| `__shtuna` `__pararupa` `__naschavy` | relations between two sounds, named after the sūtra |
 | `__saH` `__pragrhya` `__avyaya` `__inflected` `__upasarga` `__apratyaya` `__ud` `__nam` `__etattad` `__bhobhago` `__ang` `__karotau` `__napadantat` `__inku` `__shashcho` | word predicates, argument is a whole word |
 
 A predicate gets its arguments in order and is false when any of them is an empty string. Several arguments read like the sūtra:
@@ -95,7 +95,7 @@ Lookups, return a string, unknown sounds stay unchanged:
 | `__yan` `__guna`          | semivowel, guṇa              |
 | `__aghosha` `__jash` `__mahaprana` | voiceless, voiced, aspirated voiced |
 | `__talavya` `__anunasika` | palatal, nasal of the class  |
-| `__upper` `__lower`       | `toUpperCase`, `toLowerCase` |
+| `__upper`                 | `toUpperCase`                |
 | `__vriddhi`               | vṛddhi of `e o E O`          |
 | `__ttva`                  | retroflex of `s` and dentals |
 

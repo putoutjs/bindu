@@ -610,6 +610,8 @@ const conflicts = [
 
 const visarga = [
     ['namaH te', 'namas te'],
+    ['A CAyA', 'AcCAyA'],
+    ['vidyA Cattra', 'vidyA Cattra'],
     ['SivAya oM', 'SivAyoM'],
     ['rAma eza', 'rAmEza'],
     ['harim vande', 'hariM vande'],

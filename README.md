@@ -106,6 +106,7 @@ and says which form you get by default; switch the rule to get the other one.
 - ✅[`visarga/apply-bhobhago`](https://putout.cloudcmd.io/#/gist/839c4d49726a2f869dc2854a110001d9/f443ecb1522b2b0f8d18a86eaaf8bdfe9325eaf6): [भोभगोअघोअपूर्वस्य योऽशि](https://ashtadhyayi.com/sutraani/8/3/17) — 8.3.17
 - ✅[`visarga/apply-kharovasana`](https://putout.cloudcmd.io/#/gist/425cfcba3ba6dd2bb4a6692fc6fb6959/bc3fb244c2bbe03597e3ae2ab85473ae46a5f22b):[खरवसानयोर्विसर्जनीयः](https://ashtadhyayi.com/sutraani/8/3/15) — 8.3.15
 - ✅[`visarga/apply-etat-tadoh`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-etat-tadoh/index.js): [एतत्तदोः सुलोपोऽकोरनञ्समासे हलि](https://ashtadhyayi.com/sutraani/6/1/132) — 6.1.132
+- ✅[`visarga/apply-hali-sarvesham`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-hali-sarvesham/index.js): [हलि सर्वेषाम्](https://ashtadhyayi.com/sutraani/8/3/22) — 8.3.22
 - ✅[`visarga/apply-visarga-voiced`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-voiced/index.js): [अतो रोरप्लुतादप्लुते](https://ashtadhyayi.com/sutraani/6/1/113) — 6.1.113
 - ✅[`visarga/apply-visarga-vowel`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-visarga-vowel/index.js): [हशि च](https://ashtadhyayi.com/sutraani/6/1/114) — 6.1.114
 - ✅[`visarga/apply-ah-sandhi`](https://github.com/putoutjs/bindu/blob/master/lib/sandhi/visarga/apply-ah-sandhi/index.js): [लोपः शाकल्यस्य](https://ashtadhyayi.com/sutraani/8/3/19) — 8.3.19
@@ -200,6 +201,16 @@ saḥ and eṣaḥ lose the visarga before a consonant.
 सः + गच्छति → स गच्छति
 saH + gacCati → sa gacCati
 saḥ + gacchati → sa gacchati
+```
+
+#### apply-hali-sarvesham
+
+After bhoḥ, bhagoḥ and aghoḥ the visarga disappears before a voiced consonant.
+
+```
+भोः + देव → भो देव
+BoH + deva → Bo deva
+bhoḥ + deva → bho deva
 ```
 
 #### apply-as-sandhi

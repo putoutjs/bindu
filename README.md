@@ -214,6 +214,10 @@ agniH + karoti → agniH karoti
 ```
 tat + mama → tanmama
 jagat + nAtha → jagannAtha
+
+उद् + मान → उन्मान
+ud + mAna → unmAna
+ud + māna → unmāna
 ```
 
 #### apply-udah-sthastambhoh
